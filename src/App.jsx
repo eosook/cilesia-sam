@@ -1,12 +1,19 @@
-import { useState } from 'react'
-import './App.css'
-import logo from "../src/assets/images/logo.png";
+import './App.scss'
+import { BrowserRouter, Routes, Route } from 'react-router-dom';
+import Header from './components/Header/Header';
+import Footer from './components/Footer/Footer';
 
 function App() {
 
   return (
     <>
-      <img src={logo}></img>
+      <BrowserRouter>
+        <Header />
+        <Routes>
+          <Route></Route>
+        </Routes>
+        {/* <Footer /> */}
+      </BrowserRouter>
     </>
   )
 }

@@ -1,6 +1,7 @@
-import "./HomePage.scss";
-import BookingPolicy from "../../components/BookingPolicy/BookingPolicy";
-import BusinessHours from "../../components/BusinessHours/BusinessHours";
+import './HomePage.scss';
+import BookingPolicy from '../../components/BookingPolicy/BookingPolicy';
+import BusinessHours from '../../components/BusinessHours/BusinessHours';
+import AppointmentPrep from '../../components/AppointmentPrep/AppointmentPrep'
 
 export default function HomePage() {
   return (
@@ -11,6 +12,7 @@ export default function HomePage() {
       </div>
       <BookingPolicy />
       <BusinessHours />
+      <AppointmentPrep />
     </main>
   );
 }

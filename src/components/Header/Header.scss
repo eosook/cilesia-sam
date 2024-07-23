@@ -5,12 +5,12 @@
 .header{
     font-family: $primary-font;
     overflow: hidden;
-    position: absolute;
+    position: fixed;
     width: 100%;
     display: flex;
     justify-content: space-between;
     align-items: center;
-    padding: 1rem 2.5rem;
+    padding: 0 2.5rem;
     background-color: $color-two;
 
     &__logo{
@@ -23,6 +23,7 @@
     list-style-type: none;
     gap: 1.5rem;
     font-weight: 500;
+    color: white;
 
     &__item{
         &:hover{

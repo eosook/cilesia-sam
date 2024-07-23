@@ -8,7 +8,7 @@ export default function BookingPolicy() {
         <p>Please read carefully before booking!</p>
       </section>
 
-      {/* Contains the studio information section */}
+      {/* Studio Information section */}
 
       <section className="home-info__section">
         <h2 className="home-info__header">Studio Information:</h2>
@@ -21,6 +21,9 @@ export default function BookingPolicy() {
           assured, the dogs are not permitted inside the studio space.
         </p>
       </section>
+
+      {/* Appoint Bookings section */}
+
       <section className="home-info__section">
         <h2 className="home-info__header">Appointment Bookings:</h2>
         <p className="home-info__body">
@@ -31,6 +34,9 @@ export default function BookingPolicy() {
           automatically be cancelled.
         </p>
       </section>
+
+      {/* Cancellations and Rescheduling section */}
+
       <section className="home-info__section">
         <h2 className="home-info__header">Cancellations and Rescheduling:</h2>
         <p className="home-info__body">
@@ -43,6 +49,9 @@ export default function BookingPolicy() {
           send payment will prevent future bookings.
         </p>
       </section>
+
+      {/* No Refunds section */}
+
       <section className="home-info__section">
         <h2 className="home-info__header">No Refunds:</h2>
         <p className="home-info__body">

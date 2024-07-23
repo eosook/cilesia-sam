@@ -1,20 +1,20 @@
+@use '../../styles/partials/variables' as *;
 @use '../../styles/partials/fonts' as *;
 @use '../../styles/partials/mixins' as *;
 
 .header{
     font-family: $primary-font;
-    height: 100px;
     overflow: hidden;
     position: absolute;
     width: 100%;
     display: flex;
     justify-content: space-between;
     align-items: center;
-    padding: 1rem 2rem;
-    background-color: rgb(226, 248, 255);
+    padding: 1rem 2.5rem;
+    background-color: $color-two;
 
     &__logo{
-        height: 100px;
+        height: 80px;
     }
 }
 
@@ -22,4 +22,12 @@
     display: flex;
     list-style-type: none;
     gap: 1.5rem;
+    font-weight: 500;
+
+    &__item{
+        &:hover{
+            cursor: pointer;
+            color: pink;
+        }
+    }
 }

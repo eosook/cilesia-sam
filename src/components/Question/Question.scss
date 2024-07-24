@@ -1,0 +1,25 @@
+.question-box{
+    width: 80%;
+    background-color: rgb(219, 219, 255);
+    margin: 0 auto;
+}
+
+.question{
+    padding: 0.25rem 1rem;
+    cursor: pointer;
+    &:hover{
+        background-color: rgb(75, 75, 248);
+    }
+}
+
+.answer {
+  display: none;
+
+  &__visible {
+    display: block;
+    padding: 0.25rem 1rem;
+    background-color: rgb(145, 145, 255);
+    height: 300px;
+    transition: height 0.7s ease-out;
+  }
+}

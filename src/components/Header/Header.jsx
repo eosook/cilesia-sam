@@ -5,8 +5,8 @@ import { useNavigate } from "react-router-dom";
 export default function Header() {
     const navigate = useNavigate();
 
-    const toHomePage = () => {
-        navigate("/");
+    const toPage = (page) => {
+        navigate('/' + page);
     }
 
   return (
@@ -14,9 +14,9 @@ export default function Header() {
       <img className="header__logo" src={logo} alt="Cilesia Logo" />
       <nav className="header__nav">
         <ul className="menu">
-          <li className="menu__item" onClick={toHomePage}>Home</li>
-          <li className="menu__item">Services</li>
-          <li className="menu__item">FAQ</li>
+          <li className="menu__item" onClick={() => toPage("")}>Home</li>
+          <li className="menu__item" onClick={() => toPage("services")}>Services</li>
+          <li className="menu__item" onClick={() => toPage("questions")}>FAQ</li>
         </ul>
       </nav>
     </header>

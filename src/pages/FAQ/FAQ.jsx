@@ -2,8 +2,10 @@ import './FAQ.scss'
 
 export default function FAQ(){
     return (
-        <main>
-            <h1>HI</h1>
+        <main className="questions">
+            <div className="questions">
+                <h1>FAQ</h1>
+            </div>
         </main>
     )
 }

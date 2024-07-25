@@ -1,0 +1,54 @@
+@use '../../styles/partials/variables' as *;
+@use '../../styles/partials/fonts' as *;
+@use '../../styles/partials/mixins' as *;
+
+.home-section{
+    width: 90%;
+    margin: 2rem auto 4rem;
+    @include tablet{
+        display: flex;
+        justify-content: space-between;
+        align-items: center;
+        max-width: 700px;
+    }
+
+    &__photo{
+        width: 100%;
+        @include tablet{
+            max-width: 350px;
+            height: 450px;
+            width: auto;
+        }
+    }
+
+    &__div{
+        padding: 2rem;
+        @include tablet{
+            width: 45%;
+        }
+    }
+
+    &__subtitle{
+        padding-bottom: 0.75rem;
+    }
+
+    &__title{
+        padding-bottom: 1rem;
+    }
+
+    &__body{
+        padding-bottom: 1rem;
+    }
+
+    &__button{
+        padding: 1.125rem 0.75rem 1rem;
+        border-radius: 4px;
+        border: 3px solid #ECD5C5;
+        background-color: #ECD5C5;
+
+        &:hover{
+            background-color: grey;
+            color: white;
+        }
+    }
+}

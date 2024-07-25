@@ -2,6 +2,8 @@ import './HomePage.scss';
 import BookingPolicy from '../../components/BookingPolicy/BookingPolicy';
 import BusinessHours from '../../components/BusinessHours/BusinessHours';
 import AppointmentPrep from '../../components/AppointmentPrep/AppointmentPrep'
+import WhatWeDo from '../../components/WhatWeDo/WhatWeDo';
+import WhoWeAre from '../../components/WhoWeAre/WhoWeAre';
 
 export default function HomePage() {
   return (
@@ -10,6 +12,8 @@ export default function HomePage() {
         <h1 className="hero__header">Make your lash dreams a reality</h1>
         <h3 className="hero__subheader">Cilesia Beauty Bar</h3>
       </div>
+      <WhatWeDo />
+      <WhoWeAre />
       <BookingPolicy />
       <BusinessHours />
       <AppointmentPrep />

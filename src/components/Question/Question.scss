@@ -21,9 +21,9 @@
 
   &__visible {
     display: block;
-    padding: 0.25rem 1rem;
+    padding: 0.5rem 1.5rem;
     background-color: rgb(145, 145, 255);
-    height: 300px;
+    min-height: 50px;
     transition: height 0.7s ease-out;
   }
 }

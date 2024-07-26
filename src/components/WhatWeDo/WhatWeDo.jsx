@@ -1,16 +1,34 @@
-import './WhatWeDo.scss'
-import photo from '../../assets/images/studio.png'
+import "./WhatWeDo.scss";
+import photo from "../../assets/images/studio.png";
 
-export default function WhatWeDo(){
-    return (
-        <section className="home-section">
-            <img className="home-section__photo" src={photo} alt="Some Picture"></img>
-            <div className="home-section__div">
-                <h3 className="home-section__subtitle">WHAT WE DO</h3>
-                <h2 className="home-section__title">IT’S MORE THAN JUST LOOKING GOOD 24/7</h2>
-                <p className="home-section__body">Permanent makeup can not only help you save an extraordinary amount of time with application, but also reduce your spending on brow pencils, shadows, and lipstick. Imagine waking up every day with perfectly sculpted brows and full, luscious lips. Get in touch with Hanna today at Lavio Beauty Bar in Vancouver to turn that into your reality. We take every precaution to ensure that your application is safe, comfortable, and tailored for you.</p>
-                <button className="home-section__button">VIEW OUR SERVICES</button>
-            </div>
-        </section>
-    )
+export default function WhatWeDo() {
+  return (
+    <section className="home-section">
+      <img className="home-section__photo" src={photo} alt="Some Picture"></img>
+      <div className="home-section__div">
+        <h3 className="home-section__subtitle">WHAT WE DO</h3>
+        <h2 className="home-section__title">Elevate your every day</h2>
+        <p className="home-section__body">
+          Imagine waking up every morning with effortlessly stunning lashes that
+          enhance your natural beauty. Make this dream your reality. Say goodbye
+          to clumpy mascara and hello to long, voluminous lashes that last for
+          weeks.
+        </p>
+        <p className="home-section__body">
+          Our high-quality extensions are meticulously applied by skilled
+          technicians to achieve your desired look, whether it's a subtle boost
+          for everyday elegance or a dramatic flair for special occasions. Not
+          only do they save you time on your makeup routine, but they also give
+          you the confidence to face the day feeling beautiful and empowered.
+        </p>
+        <p className="home-section__body">
+          Experience the convenience of flawless lashes that withstand water,
+          sweat, and tears without smudging or flaking. Plus, with our
+          customizable options, you can choose the length, curl, and thickness
+          that suit your style perfectly.
+        </p>
+        <button className="home-section__button">VIEW OUR SERVICES</button>
+      </div>
+    </section>
+  );
 }

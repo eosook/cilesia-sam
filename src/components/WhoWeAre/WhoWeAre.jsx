@@ -8,16 +8,22 @@ export default function WhoWeAre() {
         <h3 className="home-section__subtitle">WHO WE ARE</h3>
         <h2 className="home-section__title">SAMANTHA, OWNER</h2>
         <p className="home-section__body">
-          Welcome! I’m Sam — the proud owner of Celisia Beauty Bar. Believe it
-          or not, my journey into this industry was rooted from having a
-          not-so-great experience with my very first set of brows. From there, I
-          dove deep into the fascinating world of permanent makeup. At that
-          time, it was almost impossible to find an artist or resource that was
-          able to explain the procedure step-by-step. That’s when I knew I
-          wanted to step in and fill that void. I yearned to be a fountain of
-          knowledge and share my skills to enhance the confidence of my clients.
-          In addition to offering industry-leading brow and lip services, I
-          specialize in private, two-day training for both brows and lips.
+          Welcome to Cilesia Beauty Bar, where we believe in empowering women
+          through stunning lashes and a touch of creativity! I'm Samantha, the
+          proud owner and founder of Cilesia Beauty Bar.
+        </p>
+        <p className="home-section__body">
+          After years of chasing corporate dreams that left me feeling
+          unfulfilled, I decided to take a leap of faith and turn my passion for
+          beauty and creativity into a thriving business. Cilesia Beauty Bar was
+          born out of a desire to break free from the endless corporate chase
+          and create something meaningful for myself and others.
+        </p>
+        <p className="home-section__body">
+          What inspires me most is seeing the transformation in women's
+          confidence when they leave our salon with beautifully done lashes.
+          It's more than just enhancing outer beauty; it's about helping women
+          feel empowered, confident, and ready to conquer the world.
         </p>
         <button className="home-section__button">VIEW OUR TRAINING</button>
       </div>

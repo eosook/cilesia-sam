@@ -14,9 +14,9 @@ export default function HomePage() {
       </div>
       <WhatWeDo />
       <WhoWeAre />
-      <BookingPolicy />
+      {/* <BookingPolicy />
       <BusinessHours />
-      <AppointmentPrep />
+      <AppointmentPrep /> */}
     </main>
   );
 }

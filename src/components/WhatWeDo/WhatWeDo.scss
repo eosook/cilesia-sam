@@ -6,28 +6,30 @@
   display: flex;
   flex-direction: column;
   justify-content: space-between;
-  align-items: center;
   width: 100%;
   margin: 2rem auto 4rem;
   font-family: $primary-font;
+  padding: 2rem;
   @include tablet {
     flex-direction: row;
     border: 2px solid black;
+    max-width: 1000px;
+    gap: 2rem;
   }
 
   &__photo {
     width: 100%;
     @include tablet {
-      max-width: 350px;
-      height: 450px;
+      max-width: 50%;
+      max-height: 450px;
       width: auto;
+      height: auto;
     }
   }
 
   &__div {
-    padding: 2rem;
     @include tablet {
-      width: 45%;
+      width: 100%;
     }
   }
 

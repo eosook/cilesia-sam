@@ -15,8 +15,10 @@ export default function Header() {
       <nav className="header__nav">
         <ul className="menu">
           <li className="menu__item" onClick={() => toPage("")}>Home</li>
-          <li className="menu__item" onClick={() => toPage("services")}>Services</li>
           <li className="menu__item" onClick={() => toPage("questions")}>FAQ</li>
+          <li className="menu__item" onClick={() => toPage("services")}>Services</li>
+          <li className="menu__item" onClick={() => toPage("book")}>Book</li>
+          <li className="menu__item" onClick={() => toPage("contact")}>Contact</li>
         </ul>
       </nav>
     </header>

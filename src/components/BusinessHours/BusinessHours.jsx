@@ -17,6 +17,7 @@ export default function BusinessHours() {
         <img alt="payment"></img>
         <p>Cash or e-transfer accepted.</p>
       </div>
+
     </div>
   );
 }

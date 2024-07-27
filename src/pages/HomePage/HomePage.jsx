@@ -1,7 +1,4 @@
 import './HomePage.scss';
-import BookingPolicy from '../../components/BookingPolicy/BookingPolicy';
-import BusinessHours from '../../components/BusinessHours/BusinessHours';
-import AppointmentPrep from '../../components/AppointmentPrep/AppointmentPrep'
 import WhatWeDo from '../../components/WhatWeDo/WhatWeDo';
 import WhoWeAre from '../../components/WhoWeAre/WhoWeAre';
 
@@ -14,9 +11,6 @@ export default function HomePage() {
       </div>
       <WhatWeDo />
       <WhoWeAre />
-      {/* <BookingPolicy />
-      <BusinessHours />
-      <AppointmentPrep /> */}
     </main>
   );
 }

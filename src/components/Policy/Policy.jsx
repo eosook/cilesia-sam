@@ -1,0 +1,78 @@
+import "./Policy.scss";
+
+export default function Policy() {
+  return (
+    <div>
+      <h1>Policy</h1>
+      <div>
+        <h2>Studio Information</h2>
+        <p>
+          Our studio is based at home, and we share it with two friendly dogs
+          who might say hellow from afar! Although they’ll be kept in a separate
+          area during your visit, you may hear some barking. Rest assured the
+          dogs are not permitted inside the studio space.{" "}
+        </p>
+      </div>
+
+      <div>
+        <h2>Appointment Bookings:</h2>
+        <p>
+          All clients are required to send a $30 non-refundable deposit
+          (cilesiabeautybar@gmail.com) to secure the booking. Please send a
+          screenshot of the e-transfer to confirm the appointment. If the
+          deposit is not received within 24 hours of the booking, your
+          appointment will be automatically cancelled.{" "}
+        </p>
+      </div>
+
+      <div>
+        <h2>Cancellations and Rescheduling:</h2>
+        <p>
+          Please provide at minimum 48 hours notice for any cancellations or
+          reschedules. Deposits are only valid for transfer once.
+        </p>
+        <p>
+          Cancellations within 48 hours will result in forfeiture of the
+          deposit, as well as a charge for 50% of the service booked. Failure to
+          send payment will prevent future bookings.{" "}
+        </p>
+      </div>
+
+      <div>
+        <h2>No Refunds</h2>
+        <p>
+          We do not offer refunds on any services rendered. However, we value
+          your satisfaction and aim to provide exceptional experiences. If you
+          are not completely happy with your service, please reach out to us
+          within 48 hours so that we can address any concerns and make it right
+          for you
+        </p>
+      </div>
+
+      <div>
+        <h2>Tardiness</h2>
+        <p>
+          Please arrive on time. 15+ minutes late will result in cancellation of
+          your appointment and 50% of the service charged.{" "}
+        </p>
+      </div>
+
+      <div>
+        <h2>No Guests</h2>
+        <p>
+          Please no children, no pets, or guests at your appointment due to the
+          lengthy procedure time which can be uncomfortable and distracting for
+          your guest(s) and for myself as the artist.
+        </p>
+      </div>
+
+      <div>
+        <h2>Parking</h2>
+        <p>
+          Please avoid parking in my driveway. There is free street parking
+          available.{" "}
+        </p>
+      </div>
+    </div>
+  );
+}

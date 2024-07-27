@@ -1,6 +1,9 @@
 import "./Book.scss";
 import ToBooking from "../../components/ToBooking/ToBooking";
 import { useState, useEffect } from "react";
+import Policy from "../../components/Policy/Policy";
+import PreCare from "../../components/PreCare/PreCare";
+import AfterCare from "../../components/AfterCare/AfterCare";
 
 export default function Book() {
   const [book, setBook] = useState(false);
@@ -24,6 +27,9 @@ export default function Book() {
         form here ← hyperlink to consent form
       </p>
       <button onClick={() => setBook(true)}>Book Now</button>
+      <Policy />
+      <PreCare />
+      <AfterCare />
     </main>
   );
 }

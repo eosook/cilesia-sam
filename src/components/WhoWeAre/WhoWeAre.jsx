@@ -6,7 +6,7 @@ export default function WhoWeAre() {
     <section className="home-section">
       <div className="home-section__div">
         <h3 className="home-section__subtitle">WHO WE ARE</h3>
-        <h2 className="home-section__title">SAMANTHA, OWNER</h2>
+        <h2 className="home-section__title owner__title">SAMANTHA, OWNER</h2>
         <p className="home-section__body">
           Welcome to Cilesia Beauty Bar, where we believe in empowering women
           through stunning lashes and a touch of creativity! I'm Samantha, the
@@ -25,7 +25,6 @@ export default function WhoWeAre() {
           It's more than just enhancing outer beauty; it's about helping women
           feel empowered, confident, and ready to conquer the world.
         </p>
-        <button className="home-section__button">VIEW OUR TRAINING</button>
       </div>
       <img className="home-section__photo" src={photo} alt="Some Picture"></img>
     </section>

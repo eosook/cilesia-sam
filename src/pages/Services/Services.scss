@@ -1,0 +1,35 @@
+@use '../../styles/partials/variables' as *;
+@use '../../styles/partials/fonts' as *;
+@use '../../styles/partials/mixins' as *;
+
+.services{
+    &-hero{
+        height: 400px;
+        display: flex;
+        flex-direction: column;
+        align-items: center;
+        justify-content: center;
+        gap: 1rem;
+        border: 2px solid black;
+
+        &__title{
+            @include title(4rem, 400);
+        }
+
+        &__subtitle{
+            @include title(2rem, 300);
+        }
+
+        &__button{
+            @include button;
+        }
+    }
+}
+
+.style-list{
+    padding: 1rem;
+    &__title{
+        @include title(3rem, 400);
+        text-align: center;
+    }
+}

@@ -22,15 +22,12 @@
   }
 
   &__header {
-    font-size: 3rem;
-    font-weight: 400;
-    font-family: $secondary-font;
-    text-transform: uppercase;
+    @include title(3rem, 400);
     letter-spacing: 4px;
   }
 
   &__subheader {
-    font-weight: 400;
-    font-family: $secondary-font;
+    @include title(1rem, 600);
+    letter-spacing: 6px;
   }
 }

@@ -1,6 +1,7 @@
 import "./HomePage.scss";
 import WhatWeDo from "../../components/WhatWeDo/WhatWeDo";
 import WhoWeAre from "../../components/WhoWeAre/WhoWeAre";
+import ReadyToBook from "../../components/ReadyToBook/ReadyToBook";
 
 export default function HomePage() {
   return (
@@ -13,6 +14,7 @@ export default function HomePage() {
       </div>
       <WhatWeDo />
       <WhoWeAre />
+      <ReadyToBook />
     </main>
   );
 }

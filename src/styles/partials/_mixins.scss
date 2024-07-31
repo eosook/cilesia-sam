@@ -18,9 +18,28 @@
     font-size: $size;
     font-weight: $weight;
     text-transform: uppercase;
-    text-shadow: 1px 1px 2px black;
+    text-shadow: 1px 1px 2px rgb(102, 79, 36);
+}
+
+@mixin subtitle($size, $weight){
+    font-family: $secondary-font;
+    font-size: $size;
+    font-weight: $weight;
+    letter-spacing: 8px;
+    text-transform: uppercase;
+    text-shadow: 1px 1px 1px black;
+    color: $color-three;
+}
+
+@mixin body($size){
+    font-family: $primary-font;
+    font-size: $size;
+    font-weight: 300;
+    line-height: 1.75rem;
 }
 
 @mixin button(){
-    padding: 1rem 2rem;
+    padding: 0.75rem 1.5rem;
+    border: 3px solid grey;
+    cursor: pointer;
 }

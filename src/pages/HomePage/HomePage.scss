@@ -9,7 +9,10 @@
 .hero {
   background: url('../../assets/images/stolen-banner.jpg') no-repeat;
   background-size: 100% 180%;
-  height: 80vh;
+  height: 400px;
+  @include tablet{
+    height: 500px;
+  }
   &__container{
     color: rgb(249, 243, 243);
     width: 100%;

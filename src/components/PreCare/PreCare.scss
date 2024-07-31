@@ -1,0 +1,31 @@
+@use '../../styles/partials/variables' as *;
+@use '../../styles/partials/fonts' as *;
+@use '../../styles/partials/mixins' as *;
+
+.care{
+    @include componentPadding;
+    text-align: center;
+
+    &__header{
+        margin-bottom: 2rem;
+    }
+    &__title{
+        @include title(3rem, 400);
+        text-shadow: none;
+    }
+    &__subtitle{
+        @include subtitle(2rem, 500);
+    }
+
+    &-section{
+        &__title{
+            @include title(2rem, 400);
+            text-shadow: none;
+            margin-bottom: 0.5rem;
+        }
+        &__body{
+            @include body(1rem);
+            margin-bottom: 1rem;
+        }
+    }
+}

@@ -2,7 +2,7 @@ import "./PreCare.scss";
 
 export default function PreCare() {
   return (
-    <div className="care">
+    <div className="care precare">
       <div className="care__header">
         <h1 className="care__title">Pre-care</h1>
         <h3 className="care__subtitle">How to prepare for your lash appointment</h3>

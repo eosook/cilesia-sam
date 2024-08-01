@@ -43,8 +43,10 @@ export default function Book() {
       </div>
 
       <Policy />
-      <PreCare />
-      <AfterCare />
+      <div className="care-sections">
+        <PreCare />
+        <AfterCare />
+      </div>
     </main>
   );
 }

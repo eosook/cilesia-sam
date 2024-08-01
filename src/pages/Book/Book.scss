@@ -25,3 +25,10 @@
         @include button;
     }
 }
+
+.care-sections{
+    @include componentPadding;
+    @include tablet{
+        display: flex;
+    }
+}

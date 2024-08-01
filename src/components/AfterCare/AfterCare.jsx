@@ -2,7 +2,7 @@ import "./AfterCare.scss";
 
 export default function AfterCare() {
   return (
-    <div className="care">
+    <div className="care aftercare">
       <div className="care__header">
         <h1 className="care__title">AfterCare</h1>
         <h3 className="care__subtitle">Ensure your lashes last</h3>

@@ -4,6 +4,7 @@ export default function Contact() {
   return (
     <main className="contact">
       <div className="contact__container">
+        <h1 className="contact__title">Contact</h1>
         <p className="contact__body">
           Do you have questions about eyelash extensions? Had bad past
           experiences and not sure of this is for you? Have questions that
@@ -22,7 +23,7 @@ export default function Contact() {
         <input className="contact__input" type="text" placeholder="Email"></input>
         <input className="contact__input" type="text" placeholder="Address"></input>
         <input className="contact__input" type="text" placeholder="Message"></input>
-        <button className="contact__button" type="submit"></button>
+        <button className="contact__button" type="submit">SUBMIT</button>
       </form>
     </main>
   );

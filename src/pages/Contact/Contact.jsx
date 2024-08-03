@@ -1,3 +1,4 @@
+import ContactForm from "../../components/ContactForm/ContactForm";
 import "./Contact.scss";
 
 export default function Contact() {
@@ -17,14 +18,7 @@ export default function Contact() {
           <div>778-316-5982</div>
         </div>
       </div>
-      <form className="contact__form">
-        <input className="contact__input" type="text" placeholder="Name"></input>
-        <input className="contact__input" type="text" placeholder="Phone"></input>
-        <input className="contact__input" type="text" placeholder="Email"></input>
-        <input className="contact__input" type="text" placeholder="Address"></input>
-        <input className="contact__input" type="text" placeholder="Message"></input>
-        <button className="contact__button" type="submit">SUBMIT</button>
-      </form>
+      <ContactForm />
     </main>
   );
 }

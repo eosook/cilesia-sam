@@ -54,6 +54,9 @@
 }
 
 .dropdown-menu {
+  @include tablet{
+    display: none;
+  }
   &__list {
     list-style-type: none;
   }

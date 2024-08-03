@@ -1,35 +1,78 @@
-@use '../../styles/partials/variables' as *;
-@use '../../styles/partials/fonts' as *;
-@use '../../styles/partials/mixins' as *;
+@use "../../styles/partials/variables" as *;
+@use "../../styles/partials/fonts" as *;
+@use "../../styles/partials/mixins" as *;
 
-.header{
-    font-family: $primary-font;
-    text-transform: uppercase;
-    overflow: hidden;
-    position: fixed;
-    width: 100%;
+.header {
+  text-transform: uppercase;
+  overflow: hidden;
+  position: fixed;
+  width: 100%;
+  background-color: $color-three;
+  &-bar {
     display: flex;
     justify-content: space-between;
     align-items: center;
     padding: 0 2.5rem;
-    background-color: $color-three;
+  }
 
-    &__logo{
-        height: 80px;
+  &__logo {
+    height: 80px;
+
+    &:hover {
+      cursor: pointer;
     }
+  }
 }
 
-.menu{
+.menu {
+  display: none;
+  list-style-type: none;
+  gap: 1.5rem;
+  font-weight: 500;
+  color: white;
+  @include tablet {
     display: flex;
-    list-style-type: none;
-    gap: 1.5rem;
-    font-weight: 500;
-    color: white;
-
-    &__item{
-        &:hover{
-            cursor: pointer;
-            color: pink;
-        }
+  }
+  &-burger {
+    width: 40px;
+    &:hover {
+      cursor: pointer;
+      color: white;
     }
+    @include tablet {
+      display: none;
+    }
+  }
+
+  &__item {
+    @include title(1.25rem, 400);
+    &:hover {
+      cursor: pointer;
+      color: pink;
+    }
+  }
+}
+
+.dropdown-menu {
+  &__list {
+    list-style-type: none;
+  }
+  &__item {
+    background-color: $color-two;
+    padding: 1rem 2.5rem;
+    border: 1px solid black;
+    @include title(1.25rem, 400);
+
+    &:hover{
+        background-color: rgb(245, 109, 109);
+        cursor: pointer;
+        translate: 0px -3px;
+        box-shadow: 0 3px 0 rgb(69, 1, 1);
+        color: white;
+    }
+  }
+}
+
+.hide-menu {
+  display: none;
 }

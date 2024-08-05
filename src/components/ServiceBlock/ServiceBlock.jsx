@@ -1,7 +1,6 @@
 import "./ServiceBlock.scss";
 
 export default function ServiceBlock({ side, title, body, image, price, time }) {
-    console.log(image);
   if (side == "left") {
     return (
       <section className="service-block">

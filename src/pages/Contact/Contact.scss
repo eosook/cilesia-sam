@@ -3,28 +3,28 @@
 @use '../../styles/partials/mixins' as *;
 
 .contact{
-    display: flex;
-    align-items: center;
+
+    @include tablet{
+        display: flex;
+    }
     &__container{
-        padding: 4rem;
         width: 100%;
+        padding: 0 2rem;
+        margin-top: 2rem;
+        @include tablet{
+            margin-top: 4rem;
+        }
     }
     &__title{
         @include title(3rem, 400);
     }
     &__body{
         @include body(1rem);
+        margin: 1rem 0;
     }
     &__info{
         @include title(1rem, 400);
         text-shadow: none;
-    }
-    &__input{
-        width: 100%;
-        padding: 0.5rem;
-        margin-bottom: 0.5rem;
-    }
-    &__button{
-        @include button;
+        margin-bottom: 1rem;
     }
 }

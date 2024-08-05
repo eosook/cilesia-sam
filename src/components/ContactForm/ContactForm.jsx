@@ -22,25 +22,24 @@ export default function ContactForm() {
       );
   };
   return (
-    <form ref={form} onSubmit={sendEmail} className="contact__form">
-      <input className="contact__input" type="text" placeholder="Name" name="user_name" required></input>
-      <input className="contact__input" type="text" placeholder="Phone" name="phone" required></input>
-      <input className="contact__input" type="text" placeholder="Email" name="user_email" required></input>
+    <form ref={form} onSubmit={sendEmail} className="contact-form">
+      <input className="contact-form__input" type="text" placeholder="Name" name="user_name" required></input>
+      <input className="contact-form__input" type="text" placeholder="Phone" name="phone" required></input>
+      <input className="contact-form__input" type="text" placeholder="Email" name="user_email" required></input>
       <input
-        className="contact__input"
+        className="contact-form__input"
         type="text"
         placeholder="Address"
         name="address"
         required
       ></input>
-      <input
-        className="contact__input"
-        type="text"
+      <textarea
+        className="contact-form__input contact-form__textarea"
         placeholder="Message"
         name="message"
         required
-      ></input>
-      <button className="contact__button" type="submit">
+      ></textarea>
+      <button className="contact-form__button" type="submit">
         SUBMIT
       </button>
     </form>

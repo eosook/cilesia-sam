@@ -15,7 +15,6 @@ export default function Book() {
   //     script.async = true;
 
   //     document.body.appendChild(script);
-
   // }, []);
 
   useEffect(() => {

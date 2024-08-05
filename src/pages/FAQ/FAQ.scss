@@ -3,7 +3,7 @@
 @use '../../styles/partials/mixins' as *;
 
 .questions{
-    
+    padding-bottom: 2rem;
     &__header{
         text-align: center;
         font-family: $secondary-font;

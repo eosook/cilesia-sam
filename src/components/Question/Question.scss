@@ -6,13 +6,30 @@
     width: 80%;
     background-color: $color-four;
     margin: 0 auto;
+    overflow: hidden;
 }
 
 .question{
     padding: 0.5rem 1rem;
     cursor: pointer;
+    display: flex;
+    align-items: center;
+    gap: 0.5rem;
     &:hover{
         background-color: rgba($color-two, 0.2);
+    }
+
+    &__right-arrow{
+      width: 25px;
+      height: 20px;
+      animation: rotateRightArrow 0.5s;
+    }
+
+    &__down-arrow{
+      width: 18px;
+      height: 20px;
+      margin: 0 5px;
+      animation: rotateDownArrow 0.5s;
     }
 
     &__text{
@@ -24,15 +41,39 @@
     }
 }
 
+@keyframes rotateRightArrow {
+  0%{
+    transform: rotate(90deg);
+  }
+}
+
+@keyframes rotateDownArrow {
+  0%{
+    transform: rotate(-90deg);
+  }
+}
+
 .answer {
   display: none;
 
   &__visible {
     display: block;
-    font-size: 0.825rem;
+    min-height: 50px;
     padding: 0.5rem 1.5rem;
     background-color: rgba($color-two, 0.7);
-    min-height: 50px;
-    transition: height 0.7s ease-out;
+    overflow: hidden;
+  }
+  &__text{
+    @include body(1rem);
+    animation: 0.5s ease-out 0s 1 loadAnswer;
+  }
+}
+
+@keyframes loadAnswer {
+  0%{
+    transform: translateY(-50%);
+  }
+  100% {
+    transform: translateY(0);
   }
 }

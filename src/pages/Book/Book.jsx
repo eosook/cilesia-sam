@@ -1,27 +1,25 @@
 import "./Book.scss";
 import ToBooking from "../../components/ToBooking/ToBooking";
 import { useState, useEffect } from "react";
-import Policy from "../../components/Policy/Policy";
-import PreCare from "../../components/PreCare/PreCare";
-import AfterCare from "../../components/AfterCare/AfterCare";
 
 export default function Book() {
   const [book, setBook] = useState(false);
 
-  //   useEffect(() => {
-  //     const script = document.createElement('script');
+    useEffect(() => {
+      const script = document.createElement('script');
 
-  //     script.src = "https://square.site/appointments/buyer/widget/vp26zekhc1y452/L91FW9Z6QEKDK.js";
-  //     script.async = true;
-
-  //     document.body.appendChild(script);
-  // }, []);
+      script.src = "https://square.site/appointments/buyer/widget/vp26zekhc1y452/L91FW9Z6QEKDK.js";
+      script.async = true;
+      
+      document.body.appendChild(script);
+  }, []);
 
   useEffect(() => {
     setBook(false);
   }, []);
   return (
     <main className="book">
+      <script src='https://square.site/appointments/buyer/widget/vp26zekhc1y452/L91FW9Z6QEKDK.js'></script>
       {book ? (
         <ToBooking
           url={
@@ -39,12 +37,6 @@ export default function Book() {
         <button className="book__button" onClick={() => setBook(true)}>
           Book Now
         </button>
-      </div>
-
-      <Policy />
-      <div className="care-sections">
-        <PreCare />
-        <AfterCare />
       </div>
     </main>
   );

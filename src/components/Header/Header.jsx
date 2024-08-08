@@ -43,6 +43,14 @@ export default function Header() {
               <img></img>
               Book
             </li>
+            <li className="menu__item" onClick={() => toPage("policy")}>
+              <img></img>
+              Policy
+            </li>
+            <li className="menu__item" onClick={() => toPage("care")}>
+              <img></img>
+              Care
+            </li>
             <li className="menu__item" onClick={() => toPage("contact")}>
               Contact
             </li>

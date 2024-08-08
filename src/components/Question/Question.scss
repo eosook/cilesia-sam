@@ -65,11 +65,20 @@
   }
   &__text{
     @include body(1rem);
-    animation: 0.5s ease-out 0s 1 loadAnswer;
+    animation: 0.5s ease-out 0s 1 loadText;
   }
 }
 
 @keyframes loadAnswer {
+  0%{
+    transform: translateY(-50px);
+  }
+  100% {
+    transform: translateY(0);
+  }
+}
+
+@keyframes loadText {
   0%{
     transform: translateY(-50%);
   }

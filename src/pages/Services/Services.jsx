@@ -1,27 +1,21 @@
 import "./Services.scss";
-import ToBooking from "../../components/ToBooking/ToBooking";
-import { useState } from "react";
 import ServiceBlock from "../../components/ServiceBlock/ServiceBlock";
 import pepe from "../../assets/images/pepe-clown.png";
 
 export default function Services() {
-  const [book, setBook] = useState(false);
+
+  const toBooking = () => {
+    location.href="https://book.squareup.com/appointments/vp26zekhc1y452/location/L91FW9Z6QEKDK/services"
+  }
   return (
     <main className="services">
-      {book ? (
-        <ToBooking
-          url={
-            "https://square.site/appointments/buyer/widget/vp26zekhc1y452/L91FW9Z6QEKDK.js"
-          }
-        />
-      ) : null}
       <div className="services-hero">
         <h1 className="services-hero__title">SERVICES</h1>
         <h3 className="services-hero__subtitle">
           Start your day with effortless beauty and get ready to wake up with no
           makeup!
         </h3>
-        <button className="services-hero__button" onClick={() => setBook(true)}>BOOK NOW</button>
+        <button className="services-hero__button" onClick={toBooking}>BOOK NOW</button>
       </div>
       <div className="style-list">
         <h2 className="style-list__title">MEET THE LASH STYLES</h2>

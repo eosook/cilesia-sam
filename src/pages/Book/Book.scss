@@ -4,14 +4,15 @@
 
 .book{
     &__hero{
-        padding: 2rem;
+        padding: 3rem 0 2rem;
         height: 300px;
-        border: 2px solid black;
-        display: flex;
-        flex-direction: column;
-        justify-content: center;
-        align-items: center;
+        text-align: center;
         gap: 0.5rem;
+        @include tablet{
+            max-width: 800px;
+            margin: 0 auto;
+            border: 2px solid black;
+        }
     }
     &__title{
         @include title(3rem, 400);
@@ -30,5 +31,14 @@
     @include componentPadding;
     @include tablet{
         display: flex;
+    }
+}
+
+.script{
+    min-height: 600px;
+    padding: 0 2rem;
+
+    @include tablet{
+        padding: 0rem 6rem;
     }
 }

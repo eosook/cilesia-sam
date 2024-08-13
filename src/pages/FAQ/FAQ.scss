@@ -3,7 +3,7 @@
 @use '../../styles/partials/mixins' as *;
 
 .questions{
-    min-height: 600px;
+    min-height: 81.25vh;
     padding-bottom: 2rem;
     &__header{
         text-align: center;

@@ -1,10 +1,10 @@
 import "./WhatWeDo.scss";
 import photo from "../../assets/images/studio.png";
-import ToBooking from "../ToBooking/ToBooking";
-import { useState } from "react";
 
 export default function WhatWeDo() {
-  const [book, setBook] = useState(false);
+  const toBooking = () => {
+    location.href="https://book.squareup.com/appointments/vp26zekhc1y452/location/L91FW9Z6QEKDK/services"
+  }
   return (
     <section className="home-section">
       <img className="home-section__photo" src={photo} alt="Some Picture"></img>
@@ -30,14 +30,7 @@ export default function WhatWeDo() {
           customizable options, you can choose the length, curl, and thickness
           that suit your style perfectly.
         </p>
-        <button className="home-section__button" onClick={() => setBook(true)}>Book Now</button>
-        {book ? (
-          <ToBooking
-            url={
-              "https://square.site/appointments/buyer/widget/vp26zekhc1y452/L91FW9Z6QEKDK.js"
-            }
-          />
-        ) : null}
+        <button className="home-section__button" onClick={toBooking}>Book Now</button>
       </div>
     </section>
   );

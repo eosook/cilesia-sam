@@ -3,14 +3,20 @@
 @use '../../styles/partials/mixins' as *;
 
 .questions{
-    min-height: 81.25vh;
+    min-height: 84.75vh;
     padding-bottom: 2rem;
-    &__header{
-        text-align: center;
-        font-family: $secondary-font;
-        margin: 2rem 0;
-        font-size: 3rem;
-        letter-spacing: 0.5rem;
+    &__hero{
+        @include heroBackgroundOne;
+        @include title(2rem, 400);
         color: $color-five;
+        display: flex;
+        align-items: center;
+        justify-content: center;
+        @include tablet{
+            font-size: 4rem;
+        }
+    }
+    &-list{
+        padding: 3rem 0;
     }
 }

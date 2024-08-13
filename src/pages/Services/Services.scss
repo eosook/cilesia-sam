@@ -4,20 +4,24 @@
 
 .services{
     &-hero{
-        height: 400px;
-        display: flex;
-        flex-direction: column;
-        align-items: center;
-        justify-content: center;
+        @include heroBackgroundOne;
         gap: 1rem;
-        border: 2px solid black;
 
         &__title{
-            @include title(4rem, 400);
+            @include title(2rem, 400);
+            color: $color-five;
+            @include tablet{
+                font-size: 4rem;
+            }
         }
 
         &__subtitle{
-            @include title(2rem, 300);
+            @include title(2rem, 400);
+            color: $color-five;
+            margin-bottom: 1rem;
+            @include tablet{
+                font-size: 2rem;
+            }
         }
 
         &__button{

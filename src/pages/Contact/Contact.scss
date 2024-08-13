@@ -6,6 +6,7 @@
     min-height: calc(100vh - 3.75rem);
     @include tablet{
         display: flex;
+        padding: 10rem 2rem 2rem;
     }
     &__container{
         width: 100%;

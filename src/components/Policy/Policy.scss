@@ -3,12 +3,19 @@
 @use '../../styles/partials/mixins' as *;
 
 .policy{
-    @include componentPadding;
+    background: linear-gradient($color-three 0%, white 40%, white 60%, $color-three 100%);
     text-align: center;
     
     &__title{
-        @include title(3rem, 500);
-        padding: 1rem;
+        @include title(4rem, 500);
+        @include heroBackgroundOne;
+    }
+
+    &-list{
+        padding: 2rem;
+        @include tablet{
+            padding: 2rem 4rem;
+        }
     }
 
     &-section{
@@ -19,7 +26,7 @@
         }
         &__body{
             @include body(1rem);
-            margin-bottom: 1rem;
+            padding-bottom: 1rem;
         }
     }
 }

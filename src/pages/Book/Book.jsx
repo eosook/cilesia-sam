@@ -5,8 +5,9 @@ export default function Book() {
   useEffect(() => {
     var loadScript = function(src){
       var script = document.createElement('script');
-      script.async = false;
+      script.async = true;
       script.src = src;
+      script.classList.add = "script-container"
       var body = document.getElementsByClassName('script')[0];
       body.appendChild(script);
     }
@@ -21,11 +22,8 @@ export default function Book() {
         <p className="book__body">
           Please ensure that you read through the booking policies prior to
           booking! If you are a new client, please complete the new client
-          intake form <a href="">here</a>
+          intake form <a className="book__link" href="">here</a>
         </p>
-        <button className="book__button" onClick={() => setBook(true)}>
-          Book Now
-        </button>
       </div>
       <div className="script"></div>
     </main>

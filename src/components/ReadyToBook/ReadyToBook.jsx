@@ -6,10 +6,12 @@ export default function ReadyToBook() {
 
   const toBooking = () => {
     navigate("./book");
+    window.scrollTo(0, 0);
   }
 
   const toContact = () => {
     navigate("./contact")
+    window.scrollTo(0, 0);
   }
 
   const openNewTab = (url) => {

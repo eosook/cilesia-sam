@@ -4,26 +4,38 @@
 
 .book{
     &__hero{
+        @include heroBackgroundOne;
         padding: 3rem 0 2rem;
-        height: 300px;
         text-align: center;
         gap: 0.5rem;
         @include tablet{
-            max-width: 800px;
             margin: 0 auto;
-            border: 2px solid black;
         }
     }
     &__title{
-        @include title(3rem, 400);
         text-align: center;
+        @include title(4rem, 400);
+        color: $color-five;
+        @include tablet{
+            font-size: 4rem;
+        }
     }
     &__body{
-        @include body(1rem);
+        @include subtitle(1.5rem, 400);
+        color: white;
+        padding: 0 2rem;
     }
     &__button{
         margin-top: 1rem;
         @include button;
+    }
+    &__link{
+        @include subtitle(1.5rem, 400);
+        text-decoration: none;
+        color: rgb(134, 227, 255);
+        &:hover{
+            color: pink;
+        }
     }
 }
 
@@ -35,10 +47,13 @@
 }
 
 .script{
-    min-height: 600px;
-    padding: 0 2rem;
+    min-height: 800px;
+    padding: 2rem;
 
     @include tablet{
-        padding: 0rem 6rem;
+        padding: 2rem 2rem;
+    }
+    iframe{
+        min-height: 800px !important;
     }
 }

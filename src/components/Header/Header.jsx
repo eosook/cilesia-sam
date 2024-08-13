@@ -12,6 +12,7 @@ export default function Header() {
   const toPage = (page) => {
     navigate("/" + page);
     setShowMenu(false);
+    window.scrollTo(0, 0);
   };
 
   return (

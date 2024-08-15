@@ -4,7 +4,6 @@
 
 .header {
   text-transform: uppercase;
-  overflow: hidden;
   position: fixed;
   width: 100%;
   background-color: $color-three;
@@ -30,6 +29,7 @@
   gap: 1.5rem;
   font-weight: 500;
   color: white;
+  overflow: hidden;
   @include tablet {
     display: flex;
   }
@@ -54,7 +54,7 @@
 }
 
 .dropdown-menu {
-  @include tablet{
+  @include tablet {
     display: none;
   }
   &__list {
@@ -66,16 +66,45 @@
     border: 1px solid black;
     @include title(1.25rem, 400);
 
-    &:hover{
-        background-color: rgb(245, 109, 109);
-        cursor: pointer;
-        translate: 0px -3px;
-        box-shadow: 0 3px 0 rgb(69, 1, 1);
-        color: white;
+    &:hover {
+      background-color: rgb(245, 109, 109);
+      cursor: pointer;
+      translate: 0px -3px;
+      box-shadow: 0 3px 0 rgb(69, 1, 1);
+      color: white;
     }
   }
 }
 
 .hide-menu {
   display: none;
+}
+
+.book-dropdown {
+  &__button {
+    border: none;
+    background-color: $color-three;
+    @include title(1.25rem, 400);
+    color: white;
+    &:hover {
+      cursor: pointer;
+      color: pink;
+    }
+  }
+  &__menu {
+    display: none;
+    position: absolute;
+    text-align: center;
+    min-width: 60px;
+    background-color: $color-three;
+    // box-shadow: 0px 8px 16px 0px rgba(0, 0, 0, 0.2);
+    z-index: 1;
+    &:hover {
+      display: block;
+    }
+  }
+}
+
+.book-dropdown:hover .book-dropdown__menu{
+  display: block;
 }

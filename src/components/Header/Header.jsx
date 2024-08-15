@@ -3,7 +3,7 @@ import { useState } from "react";
 import { useNavigate } from "react-router-dom";
 import burger from "../../assets/images/burger-bar.png";
 import logo from "../../assets/images/logo.png";
-import arrowDown from '../../assets/images/down-arrow.png';
+import arrowDown from "../../assets/images/down-arrow.png";
 
 export default function Header() {
   const navigate = useNavigate();
@@ -40,18 +40,17 @@ export default function Header() {
             <li className="menu__item" onClick={() => toPage("services")}>
               Services
             </li>
-            <li className="menu__item" onClick={() => toPage("book")}>
-              <img></img>
-              Book
-            </li>
-            <li className="menu__item" onClick={() => toPage("policy")}>
-              <img></img>
-              Policy
-            </li>
-            <li className="menu__item" onClick={() => toPage("care")}>
-              <img></img>
-              Care
-            </li>
+            <div className="book-dropdown">
+              <button className="book-dropdown__button" onClick={() => toPage("book")}>Book</button>
+              <div className="book-dropdown__menu">
+                <li className="menu__item" onClick={() => toPage("policy")}>
+                  Policy
+                </li>
+                <li className="menu__item" onClick={() => toPage("care")}>
+                  Care
+                </li>
+              </div>
+            </div>
             <li className="menu__item" onClick={() => toPage("contact")}>
               Contact
             </li>

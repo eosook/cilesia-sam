@@ -6,7 +6,7 @@
   text-transform: uppercase;
   position: fixed;
   width: 100%;
-  background-color: $color-three;
+  background-color: transparent;
   &-bar {
     display: flex;
     justify-content: space-between;
@@ -46,6 +46,7 @@
 
   &__item {
     @include title(1.25rem, 400);
+    color: rgb(60, 58, 58);
     &:hover {
       cursor: pointer;
       color: pink;
@@ -65,6 +66,7 @@
     padding: 1rem 2.5rem;
     border: 1px solid black;
     @include title(1.25rem, 400);
+    color: rgb(60, 58, 58);
 
     &:hover {
       background-color: rgb(245, 109, 109);
@@ -83,9 +85,9 @@
 .book-dropdown {
   &__button {
     border: none;
-    background-color: $color-three;
+    background-color: transparent;
     @include title(1.25rem, 400);
-    color: white;
+    color: rgb(60, 58, 58);
     &:hover {
       cursor: pointer;
       color: pink;
@@ -94,9 +96,10 @@
   &__menu {
     display: none;
     position: absolute;
-    text-align: center;
+    text-align: left;
     min-width: 60px;
-    background-color: $color-three;
+    padding: 0.5rem 0;
+    background-color: transparent;
     // box-shadow: 0px 8px 16px 0px rgba(0, 0, 0, 0.2);
     z-index: 1;
     &:hover {

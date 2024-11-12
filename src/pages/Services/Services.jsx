@@ -1,6 +1,11 @@
 import "./Services.scss";
 import ServiceBlock from "../../components/ServiceBlock/ServiceBlock";
-import pepe from "../../assets/images/pepe-clown.png";
+import classicImage from "../../assets/images/Classic.png"
+import hybridImage from "../../assets/images/Hybrid.png"
+import volumeImage from "../../assets/images/Volume.png"
+import megaImage from "../../assets/images/Mega.png"
+import wispyImage from "../../assets/images/Wispy.png"
+import wetImage from "../../assets/images/Wet.png"
 
 export default function Services() {
 
@@ -28,9 +33,7 @@ export default function Services() {
         The result is a polished, understated look that adds length and a touch of 
         volume to your natural lashes. Ideal for individuals with a good amount of 
         natural lashes, classic extensions provide an elegant, everyday appearance."
-          image={pepe}
-          price="$2.50"
-          time="1hr"
+          image={classicImage}
         />
         <ServiceBlock
           side="right"
@@ -41,12 +44,21 @@ export default function Services() {
         extensions. Perfect for those who want a bit more volume and texture
         without going too dramatic, hybrid extensions give a balanced, stylish
         appearance that suits various occasions."
-          image={pepe}
-          price="$2.50"
-          time="1hr"
+          image={hybridImage}
         />
         <ServiceBlock
           side="left"
+          title="Wet"
+          body="Mega volume lash extensions take the volume technique to the next level 
+        by using an even greater number of ultra-fine extensions (typically 10-20) for 
+        each natural lash. This creates an extremely full, dense, and dramatic effect. 
+        Mega volume extensions are perfect for individuals who want a bold, glamorous look 
+        for special occasions or who prefer a very thick, eye-catching lash line. This style 
+        offers the highest level of volume and thickness, making a powerful statement."
+          image={wetImage}
+        />
+        <ServiceBlock
+          side="right"
           title="Volume"
           body="Volume lash extensions use multiple lightweight extensions (usually 6-9)
         fanned together and applied to each natural lash. This method produces a
@@ -54,12 +66,10 @@ export default function Services() {
         Ideal for those with sparse natural lashes or anyone seeking a glamorous
         appearance, volume extensions provide significant volume and a soft,
         feathery effect that enhances the eyes beautifully."
-          image={pepe}
-          price="$2.50"
-          time="1hr"
+          image={volumeImage}
         />
         <ServiceBlock
-          side="right"
+          side="left"
           title="Mega Volume"
           body="Mega volume lash extensions take the volume technique to the next level 
         by using an even greater number of ultra-fine extensions (typically 10-20) for 
@@ -67,9 +77,7 @@ export default function Services() {
         Mega volume extensions are perfect for individuals who want a bold, glamorous look 
         for special occasions or who prefer a very thick, eye-catching lash line. This style 
         offers the highest level of volume and thickness, making a powerful statement."
-          image={pepe}
-          price="$2.50"
-          time="1hr"
+          image={megaImage}
         />
       </div>
     </main>

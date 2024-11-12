@@ -1,5 +1,5 @@
 import "./WhatWeDo.scss";
-import photo from "../../assets/images/studio.png";
+import photo from "../../assets/images/Elevate Your Everyday.png";
 
 export default function WhatWeDo() {
   const toBooking = () => {

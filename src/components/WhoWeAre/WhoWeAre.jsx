@@ -1,5 +1,5 @@
 import "./WhoWeAre.scss";
-import photo from "../../assets/images/studio.png";
+import photo from "../../assets/images/Samanth_Owner.png";
 
 export default function WhoWeAre() {
   return (
@@ -26,7 +26,7 @@ export default function WhoWeAre() {
           feel empowered, confident, and ready to conquer the world.
         </p>
       </div>
-      <img className="home-section__photo" src={photo} alt="Some Picture"></img>
+      <img className="home-section__photo" src={photo} alt="Cilesia Owner Photo"></img>
     </section>
   );
 }

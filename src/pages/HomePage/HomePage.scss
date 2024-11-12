@@ -3,7 +3,7 @@
 @use '../../styles/partials/mixins' as *;
 
 .home {
-  background: linear-gradient(white 0%, $color-three 40%, white 80%, $color-three 100%);
+  background: white;
 }
 
 .hero {
@@ -11,8 +11,7 @@
   background-size: 100% 180%;
   height: 400px;
   @include tablet{
-    min-height: 60vh;
-    height: 500px;
+    height: 400px;
   }
   &__container{
     color: rgb(249, 243, 243);

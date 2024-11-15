@@ -33,7 +33,7 @@ export default function ReadyToBook() {
         <p className="ready-to-book__body">
           Searching for a reliable and skilled lash artist in Vancouver can be
           challenging, and we totally get it.{" "}
-          <a className="ready-to-book__link" onClick={() => openNewTab("https://www.instagram.com")}>Check out our Instagram</a> or {" "}
+          <a className="ready-to-book__link" onClick={() => openNewTab("https://www.instagram.com/cilesia.beautybar/")}>Check out our Instagram</a> or {" "}
           <a className="ready-to-book__link" onClick={toContact}>reach out</a> to Cilesia Beauty Bar for any inquiries. Ready to
           elevate your lash look? Schedule your appointment today!
         </p>

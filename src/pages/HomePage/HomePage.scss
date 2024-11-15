@@ -27,6 +27,7 @@
   &__header {
     @include title(2rem, 400);
     letter-spacing: 4px;
+    color: black;
     @include tablet{
       @include title(4rem, 400);
     }

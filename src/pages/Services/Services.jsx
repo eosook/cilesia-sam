@@ -6,6 +6,7 @@ import volumeImage from "../../assets/images/Volume.png"
 import megaImage from "../../assets/images/Mega.png"
 import wispyImage from "../../assets/images/Wispy.png"
 import wetImage from "../../assets/images/Wet.png"
+import specialtyImage from "../../assets/images/Specialty Curl.png"
 
 export default function Services() {
 
@@ -78,6 +79,19 @@ export default function Services() {
         for special occasions or who prefer a very thick, eye-catching lash line. This style 
         offers the highest level of volume and thickness, making a powerful statement."
           image={megaImage}
+        />
+        <h2 className="style-list__title">ADD ONS</h2>
+        <ServiceBlock
+          side="left"
+          title="Wispy"
+          body="Adds texture and dimension into any set (not applicable for Classic extensions)"
+          image={wispyImage}
+        />
+        <ServiceBlock
+          side="left"
+          title="Specialty Curl"
+          body="Add in L/M curl to create a Foxeye/Eyeliner effect"
+          image={specialtyImage}
         />
       </div>
     </main>

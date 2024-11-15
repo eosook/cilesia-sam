@@ -15,7 +15,6 @@
     &__title{
         text-align: center;
         @include title(4rem, 400);
-        color: $color-five;
         @include tablet{
             font-size: 4rem;
         }

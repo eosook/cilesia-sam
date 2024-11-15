@@ -8,7 +8,6 @@
     &__hero{
         @include heroBackgroundOne;
         @include title(2rem, 400);
-        color: $color-five;
         display: flex;
         align-items: center;
         justify-content: center;

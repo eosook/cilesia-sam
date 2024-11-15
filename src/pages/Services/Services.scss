@@ -9,7 +9,6 @@
 
         &__title{
             @include title(2rem, 400);
-            color: $color-five;
             @include tablet{
                 font-size: 4rem;
             }
@@ -17,7 +16,6 @@
 
         &__subtitle{
             @include title(2rem, 400);
-            color: $color-five;
             margin-bottom: 1rem;
             @include tablet{
                 font-size: 2rem;

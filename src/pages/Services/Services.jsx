@@ -37,7 +37,7 @@ export default function Services() {
           image={classicImage}
         />
         <ServiceBlock
-          side="right"
+          side="left"
           title="Hybrid"
           body="Hybrid lash extensions are a blend of classic and volume techniques,
         combining individual lashes with volume fans. This mix creates a
@@ -59,7 +59,7 @@ export default function Services() {
           image={wetImage}
         />
         <ServiceBlock
-          side="right"
+          side="left"
           title="Volume"
           body="Volume lash extensions use multiple lightweight extensions (usually 6-9)
         fanned together and applied to each natural lash. This method produces a

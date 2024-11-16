@@ -31,5 +31,7 @@
 }
 
 .precare{
-    border-right: 2px dotted black;
+    @include tablet{
+        border-right: 2px dotted black;
+    }
 }

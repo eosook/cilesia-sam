@@ -6,17 +6,19 @@
     &-hero{
         @include heroBackgroundOne;
         gap: 1rem;
+        text-align: center;
 
         &__title{
             @include title(2rem, 400);
             @include tablet{
-                font-size: 4rem;
+                font-size: 3rem;
             }
         }
 
         &__subtitle{
             @include title(2rem, 400);
             margin-bottom: 1rem;
+            font-size: 1.25rem;
             @include tablet{
                 font-size: 2rem;
             }
@@ -29,7 +31,11 @@
 }
 
 .style-list{
-    padding: 1rem;
+    padding: 1rem 2rem;
+
+    @include tablet{
+        padding: 1rem 3rem;
+    }
     &__title{
         @include title(3rem, 400);
         text-align: center;

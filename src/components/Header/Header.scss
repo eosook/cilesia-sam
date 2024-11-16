@@ -62,17 +62,17 @@
     list-style-type: none;
   }
   &__item {
-    background-color: $color-two;
+    background-color: white;
     padding: 1rem 2.5rem;
     border: 1px solid black;
     @include title(1.25rem, 400);
     color: rgb(60, 58, 58);
 
     &:hover {
-      background-color: rgb(245, 109, 109);
+      background-color: rgb(234, 229, 229);
       cursor: pointer;
-      translate: 0px -3px;
-      box-shadow: 0 3px 0 rgb(69, 1, 1);
+      translate: 0px -1px;
+      box-shadow: 0 3px 0 rgba(black, 0.2);
       color: white;
     }
   }

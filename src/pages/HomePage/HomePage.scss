@@ -29,12 +29,12 @@
     letter-spacing: 4px;
     color: black;
     @include tablet{
-      @include title(4rem, 400);
+      font-size: 3rem;
     }
   }
 
   &__subheader {
-    @include title(1rem, 600);
+    @include title(1.5rem, 600);
     letter-spacing: 6px;
   }
 }

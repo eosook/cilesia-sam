@@ -2,13 +2,27 @@
 @use '../../styles/partials/fonts' as *;
 @use '../../styles/partials/mixins' as *;
 
+@keyframes lift{
+    0%{
+        transform: translateY(0);
+    }
+    100%{
+        transform: translateY(-8px);
+    }
+}
+
 .service-block{
     &-left{
         border: 3px solid white;
-        margin: 1rem 0;
-        padding: 0.5rem 1rem 2rem;
+        margin: 1rem 0 2rem;
+        padding: 1.5rem 1rem;
         text-align: center;
-        border-bottom: 2px dotted black;
+        box-shadow: 2px 2px 4px grey;
+        border-radius: 8px;
+
+        &:hover{
+            animation: 0.5s ease lift forwards;
+        }
 
         @include tablet{
             display: flex;

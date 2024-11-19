@@ -41,7 +41,12 @@ export default function Header() {
               Services
             </li>
             <div className="book-dropdown">
-              <button className="book-dropdown__button" onClick={() => toPage("book")}>Book</button>
+              <button
+                className="book-dropdown__button"
+                onClick={() => toPage("book")}
+              >
+                Book
+              </button>
               <div className="book-dropdown__menu">
                 <li className="menu__item" onClick={() => toPage("policy")}>
                   Policy
@@ -78,17 +83,12 @@ export default function Header() {
           <li className="dropdown-menu__item" onClick={() => toPage("book")}>
             Book
           </li>
-          <div className="book-dropdown">
-              <button className="book-dropdown__button" onClick={() => toPage("book")}>Book</button>
-              <div className="book-dropdown__menu">
-                <li className="menu__item" onClick={() => toPage("policy")}>
-                  Policy
-                </li>
-                <li className="menu__item" onClick={() => toPage("care")}>
-                  Care
-                </li>
-              </div>
-            </div>
+          <li className="dropdown-menu__item" onClick={() => toPage("policy")}>
+            Policy
+          </li>
+          <li className="dropdown-menu__item" onClick={() => toPage("care")}>
+            Care
+          </li>
           <li className="dropdown-menu__item" onClick={() => toPage("contact")}>
             Contact
           </li>

@@ -5,6 +5,10 @@
 .care{
     @include componentPadding;
     text-align: center;
+    border-bottom: 2px dotted black;
+    @include tablet{
+        border-bottom: none;
+    }
 
     &__header{
         margin-bottom: 2rem;
@@ -14,12 +18,14 @@
         text-shadow: none;
     }
     &__subtitle{
-        @include subtitle(2rem, 500);
+        @include subtitle(1.25rem, 500);
+        text-shadow: none;
     }
 
     &-section{
         &__title{
-            @include title(2rem, 400);
+            @include title(1.5rem, 400);
+            color: grey;
             text-shadow: none;
             margin-bottom: 0.5rem;
         }
@@ -32,6 +38,6 @@
 
 .precare{
     @include tablet{
-        border-right: 2px dotted black;
+        border-right: 2px solid black;
     }
 }

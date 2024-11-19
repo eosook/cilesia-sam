@@ -37,7 +37,8 @@
         padding: 1rem 3rem;
     }
     &__title{
-        @include title(3rem, 400);
+        @include title(2rem, 400);
+        color: rgb(0, 0, 0);
         text-align: center;
     }
 }

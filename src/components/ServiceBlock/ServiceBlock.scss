@@ -19,6 +19,7 @@
         text-align: center;
         box-shadow: 2px 2px 4px grey;
         border-radius: 8px;
+        text-indent: 1.25rem;
 
         &:hover{
             animation: 0.5s ease lift forwards;
@@ -27,6 +28,9 @@
         @include tablet{
             display: flex;
             align-items: center;
+            max-width: 1200px;
+            margin: 1rem auto 2rem;
+            text-indent: 0;
         }
         @include desktop{
             align-items: start;
@@ -50,7 +54,8 @@
     &__title{
         font-family: $secondary-font;
         text-transform: uppercase;
-        margin: 1rem 0 0;
+        margin: 1rem 0 0.5rem;
+        letter-spacing: 4px;
         @include tablet{
             margin: 0 200px 1rem 0;
         }
@@ -58,9 +63,11 @@
     &__body{
         text-align: left;
         width: 100%;
+        letter-spacing: -0.5px;
         @include tablet{
-            margin-left: 1rem;
-            margin-bottom: 1rem;
+            margin: 1rem;
+            padding-right: 1rem;
+            letter-spacing: 2px;
         }
     }
 }

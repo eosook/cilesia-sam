@@ -40,8 +40,9 @@
     color: rgb(0, 26, 255);
 
     &:hover {
-      color: rgb(255, 0, 191);
+      color: rgb(75, 93, 248);
       cursor: pointer;
+      text-decoration: underline;
     }
   }
 }

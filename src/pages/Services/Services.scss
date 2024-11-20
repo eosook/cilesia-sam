@@ -16,9 +16,8 @@
         }
 
         &__subtitle{
-            @include title(2rem, 400);
+            @include title(1.25rem, 400);
             margin-bottom: 1rem;
-            font-size: 1.25rem;
             @include tablet{
                 font-size: 2rem;
             }
@@ -40,5 +39,6 @@
         @include title(2rem, 400);
         color: rgb(0, 0, 0);
         text-align: center;
+        margin: 2rem auto 0;
     }
 }

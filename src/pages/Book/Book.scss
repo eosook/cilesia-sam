@@ -35,12 +35,12 @@
         @include button;
     }
     &__link{
-        @include subtitle(1rem, 400);
+        @include subtitle(1.25rem, 400);
         letter-spacing: 0.125rem;
         text-decoration: none;
-        color: blue;
+        color: rgb(247, 112, 134);
         &:hover{
-            color: pink;
+            color: rgb(156, 5, 30);
         }
     }
 }

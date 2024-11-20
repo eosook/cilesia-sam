@@ -38,16 +38,6 @@
   line-height: 1.75rem;
 }
 
-@mixin button() {
-  padding: 0.75rem 1.5rem;
-  border: 3px solid grey;
-  cursor: pointer;
-  &:hover {
-    background-color: grey;
-    color: white;
-  }
-}
-
 @mixin componentPadding {
   padding: 2rem;
 }
@@ -60,4 +50,33 @@
   flex-direction: column;
   align-items: center;
   justify-content: center;
+}
+
+@keyframes buttonAnimation{
+  0% {
+    padding: 0.75rem 1.5rem;
+  }
+  100%{
+    padding: 1rem 2rem;
+  }
+}
+@-webkit-keyframes buttonAnimation{
+  0% {
+    padding: 0.75rem 1.5rem;
+  }
+  100%{
+    padding: 1rem 2rem;
+  }
+}
+
+@mixin button() {
+  padding: 0.75rem 1.5rem;
+  cursor: pointer;
+  font-size: 1rem;
+  border-radius: 8px;
+  &:hover {
+    background-color: rgb(255, 198, 209);
+    color: white;
+    animation: 0.5s ease buttonAnimation forwards;
+  }
 }

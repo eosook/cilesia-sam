@@ -3,13 +3,13 @@ import photo from "../../assets/images/Elevate Your Everyday.png";
 
 export default function WhatWeDo() {
   const toBooking = () => {
-    location.href="https://book.squareup.com/appointments/vp26zekhc1y452/location/L91FW9Z6QEKDK/services"
+    location.href="http://localhost:5173/services"
   }
   return (
     <section className="home-section">
       <img className="home-section__photo" src={photo} alt="Some Picture"></img>
       <div className="home-section__div">
-        <h3 className="home-section__subtitle">WHAT WE DO</h3>
+        <h3 className="home-section__subtitle">Luxurious Lash Extensions</h3>
         <h2 className="home-section__title">Elevate your every day</h2>
         <p className="home-section__body">
           Imagine waking up every morning with effortlessly stunning lashes that
@@ -30,7 +30,7 @@ export default function WhatWeDo() {
           customizable options, you can choose the length, curl, and thickness
           that suit your style perfectly.
         </p>
-        <button className="home-section__button" onClick={toBooking}>Book Now</button>
+        <button className="home-section__button" onClick={toBooking}>Find Your Style</button>
       </div>
     </section>
   );

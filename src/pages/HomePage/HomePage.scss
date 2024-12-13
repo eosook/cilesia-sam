@@ -4,37 +4,46 @@
 
 .home {
   background: white;
+  &__seperate{
+    height: 1px;
+    width: 100%;
+    border-top: 1px solid #7f6255;
+  }
 }
 
 .hero {
-  background: url('../../assets/images/stolen-banner.jpg') no-repeat;
-  background-size: 100% 180%;
+  background: url('../../assets/images/Website Header.png') no-repeat;
+  background-size: 100% 100%;
   height: 400px;
   @include tablet{
-    height: 400px;
+    height: 600px;
   }
   &__container{
-    color: rgb(249, 243, 243);
-    width: 100%;
-    height: 100%;
+    padding: 20rem 18rem;
+
+  }
+  &__button{
+    width: 170px;
+    height: 60px;
+    background-color: transparent;
+    border: 2px solid black;
+    border-radius: 30px;
+    @include title(1.375rem, 500);
+    color: black;
     display: flex;
     align-items: center;
-    flex-direction: column;
-    justify-content: center;
-    text-align: center;
-  }
-
-  &__header {
-    @include title(2rem, 400);
-    letter-spacing: 4px;
-    color: black;
-    @include tablet{
-      font-size: 3rem;
+    justify-content: space-between;
+    padding: 0 0.5rem;
+    &:hover{
+      cursor: pointer;
+      background-color: #e6e1d2;
     }
-  }
 
-  &__subheader {
-    @include title(1.5rem, 600);
-    letter-spacing: 6px;
+    &--image{
+      height: 40px;
+      width: 40px;
+      background-color: black;
+      border-radius: 50%;
+    }
   }
 }

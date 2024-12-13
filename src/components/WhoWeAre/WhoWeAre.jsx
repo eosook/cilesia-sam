@@ -5,7 +5,7 @@ export default function WhoWeAre() {
   return (
     <section className="home-section">
       <div className="home-section__div">
-        <h3 className="home-section__subtitle">WHO WE ARE</h3>
+        <h3 className="home-section__subtitle">Richmond + Vancouver Lash Artist</h3>
         <h2 className="home-section__title owner__title">SAMANTHA, OWNER</h2>
         <p className="home-section__body">
           Welcome to Cilesia Beauty Bar, where we believe in empowering women

@@ -1,0 +1,40 @@
+@use "../../styles/partials/variables" as *;
+@use "../../styles/partials/fonts" as *;
+@use "../../styles/partials/mixins" as *;
+
+.reviews {
+  display: flex;
+  &__image {
+    margin: 0 auto;
+  }
+
+  &__section {
+    position: absolute;
+    display: flex;
+    justify-content: center;
+    gap: 3.375rem;
+    width: 100%;
+    margin: 2.75rem 0 0 12rem;
+    text-align: center;
+  }
+}
+
+.review {
+  height: 220px;
+  width: 220px;
+  &__comment {
+    font-family: #7f6255;
+    font-size: 0.75rem;
+    font-weight: 400;
+    color: #a88879;
+    letter-spacing: -0.5px;
+  }
+  &__name{
+    @include title(1.25rem, 500);
+    margin-top: 1.75rem;
+  }
+  &__style{
+    @include subtitle(0.6rem, 400);
+    letter-spacing: 2px;
+  }
+}

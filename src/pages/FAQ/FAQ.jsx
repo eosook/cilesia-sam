@@ -20,14 +20,14 @@ export default function FAQ() {
             }
           />
           <Question
+            question={"What payment methods do you accept?"}
+            answer={"I accept e-transfer or cash."}
+          />
+          <Question
             question={"How long does the appointment take?"}
             answer={
               "The length of the appointment will depend on the service you choose. Full sets range between 2.5-3 hour of application time. Fills range between 1.5-2 hours of application time. "
             }
-          />
-          <Question
-            question={"What payment methods do you accept?"}
-            answer={"I accept e-transfer or cash."}
           />
           <Question
             question={"Will eyelash extensions damage my natural lashes?"}
@@ -39,6 +39,30 @@ export default function FAQ() {
             question={"How long will my eyelash extensions last?"}
             answer={
               "A full lash grown cycle happens between 45-60 days. We typically shed a few lashes naturally everyday. For the health of your natural lashes, it is highly recommended that you book your lash fill within 3 weeks of your initial appointment.  "
+            }
+          />
+          <Question
+            question={"How do i care for my eyelash extensions?"}
+            answer={
+              "Please read our care page here for information on how to care for your lash extensions"
+            }
+          />
+          <Question
+            question={"What do I need to do to prepare for my appointment?"}
+            answer={
+              "Please read our Pre-Care page here for information on how to prepare for your lash extensions appointment."
+            }
+          />
+          <Question
+            question={"Does the application process hurt?"}
+            answer={
+              "No, the process of getting lash extensions should not hurt or sting at all. Please let your lash artist know if you feel any tugging, pulling, or scratching during the application. Some clients with sensitive eyes may experience some redness after the appointment, but the effect typically goes away within a few hours."
+            }
+          />
+          <Question
+            question={"What do I do if I have an allergic reaction?"}
+            answer={
+              "Unfortunately, you can develop an allergic reaction to lash extensions at any time, even if you’ve been getting lash extensions for a while. Symptoms usually include swelling, itchiness, flaky skin, and/or discharge or crustiness. Since I am not a medical professional, I am unable to offer advice on treatment. However if you begin to experience allergy symptoms, the best course of action is to remove your lashes.  Please contact me at your first sign of allergy to remove your lash extensions."
             }
           />
           <Question

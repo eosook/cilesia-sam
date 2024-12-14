@@ -6,13 +6,12 @@
     min-height: 84.75vh;
     padding-bottom: 2rem;
     &__hero{
-        @include heroBackgroundOne;
         @include title(2rem, 400);
         display: flex;
         align-items: center;
         justify-content: center;
         @include tablet{
-            font-size: 4rem;
+            font-size: 3rem;
         }
     }
     &-list{

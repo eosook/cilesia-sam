@@ -1,73 +1,73 @@
-@use '../../styles/partials/variables' as *;
-@use '../../styles/partials/fonts' as *;
-@use '../../styles/partials/mixins' as *;
+@use "../../styles/partials/variables" as *;
+@use "../../styles/partials/fonts" as *;
+@use "../../styles/partials/mixins" as *;
 
-@keyframes lift{
-    0%{
-        transform: translateY(0);
-    }
-    100%{
-        transform: translateY(-8px);
-    }
+@keyframes lift {
+  0% {
+    transform: translateY(0);
+  }
+  100% {
+    transform: translateY(-8px);
+  }
 }
 
-.service-block{
-    &-left{
-        border: 3px solid white;
-        margin: 1rem 0 2rem;
-        padding: 1.5rem 1rem;
-        text-align: center;
-        box-shadow: 2px 2px 4px grey;
-        border-radius: 8px;
-        text-indent: 1.25rem;
+.service-block {
+  &-left {
+    margin: 1rem 0 2rem;
+    padding: 1.5rem 1rem;
+    text-align: center;
+    border-radius: 8px;
+    text-indent: 1.25rem;
 
-        &:hover{
-            animation: 0.5s ease lift forwards;
-        }
+    &:hover {
+      animation: 0.5s ease lift forwards;
+    }
 
-        @include tablet{
-            display: flex;
-            align-items: center;
-            max-width: 1200px;
-            margin: 1rem auto 2rem;
-            text-indent: 0;
-        }
-        @include desktop{
-            align-items: start;
-        }
+    @include tablet {
+      display: flex;
+      align-items: center;
+      max-width: 1200px;
+      margin: 1rem auto 2rem;
+      text-indent: 0;
     }
-    &-right{
-        display: flex;
-        border: 3px solid white;
-        margin: 1rem 0;
-        padding: 0.5rem 1rem;
-        text-align: right;
+    @include desktop {
+      align-items: start;
     }
-    &__image{
-        height: 100%;
-        max-width: 200px;
-        border-radius: 12px;
+  }
+  &-right {
+    display: flex;
+    border: 3px solid white;
+    margin: 1rem 0;
+    padding: 0.5rem 1rem;
+    text-align: right;
+  }
+  &__image {
+    min-height: 250px;
+    max-height: 250px;
+    min-width: 300px;
+    max-width: 300px;
+    border-radius: 12px;
+  }
+  &__text {
+    width: 100%;
+  }
+  &__title {
+    font-family: $secondary-font;
+    text-transform: uppercase;
+    margin: 1rem 0 0.5rem;
+    letter-spacing: 4px;
+    @include tablet {
+      margin: 0 200px 1rem 0;
     }
-    &__text{
-        width: 100%;
+  }
+  &__body {
+    text-align: left;
+    width: 100%;
+    letter-spacing: -0.5px;
+    @include tablet {
+      margin: 1rem;
+      padding-right: 1rem;
+      letter-spacing: 2px;
     }
-    &__title{
-        font-family: $secondary-font;
-        text-transform: uppercase;
-        margin: 1rem 0 0.5rem;
-        letter-spacing: 4px;
-        @include tablet{
-            margin: 0 200px 1rem 0;
-        }
-    }
-    &__body{
-        text-align: left;
-        width: 100%;
-        letter-spacing: -0.5px;
-        @include tablet{
-            margin: 1rem;
-            padding-right: 1rem;
-            letter-spacing: 2px;
-        }
-    }
+  }
 }

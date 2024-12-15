@@ -1,42 +1,42 @@
-@use '../../styles/partials/variables' as *;
-@use '../../styles/partials/fonts' as *;
-@use '../../styles/partials/mixins' as *;
+@use "../../styles/partials/variables" as *;
+@use "../../styles/partials/fonts" as *;
+@use "../../styles/partials/mixins" as *;
 
-.services{
-    &-hero{
-        @include heroBackgroundOne;
-        text-align: center;
+.services {
+  &-hero {
+    @include heroBackgroundOne;
+    text-align: center;
 
-        &__title{
-            @include title(2rem, 400);
-            @include tablet{
-                font-size: 3rem;
-            }
-        }
-
-        &__subtitle{
-            @include title(1.25rem, 400);
-            margin-bottom: 1rem;
-            @include tablet{
-                font-size: 2rem;
-            }
-        }
-
-        &__button{
-            @include button;
-        }
+    &__title {
+      @include title(2rem, 400);
+      @include tablet {
+        font-size: 3rem;
+      }
     }
+
+    &__subtitle {
+      @include title(1.25rem, 400);
+      margin-bottom: 1rem;
+      @include tablet {
+        font-size: 2rem;
+      }
+    }
+
+    &__button {
+      @include button;
+    }
+  }
 }
 
-.style-list{
-    padding: 1rem 2rem;
+.style-list {
+  padding: 1rem 2rem;
 
-    @include tablet{
-        padding: 1rem 3rem;
-    }
-    &__title{
-        text-align: center;
-        margin: 2rem auto 0;
-        @include title(2rem, 400);
-    }
+  @include tablet {
+    padding: 1rem 3rem;
+  }
+  &__title {
+    text-align: center;
+    margin: 2rem auto 0;
+    @include title(2rem, 400);
+  }
 }

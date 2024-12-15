@@ -1,0 +1,32 @@
+@use '../../styles/partials/variables' as *;
+@use '../../styles/partials/fonts' as *;
+@use '../../styles/partials/mixins' as *;
+
+.policy{
+    text-align: center;
+    
+    &__title{
+        @include title(4rem, 500);
+    }
+
+    &-list{
+        padding: 2rem;
+        @include tablet{
+            padding: 2rem 4rem;
+        }
+    }
+
+    &-section{
+        max-width: 1200px;
+        margin: 0 auto;
+        &__title{
+            @include title(2rem, 400);
+            text-shadow: none;
+            margin-bottom: 0.5rem;
+        }
+        &__body{
+            @include body(1rem);
+            padding-bottom: 1.5rem;
+        }
+    }
+}

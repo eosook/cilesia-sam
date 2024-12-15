@@ -18,7 +18,7 @@
   font-size: $size;
   font-weight: $weight;
   text-transform: uppercase;
-  color: #7f6255;
+  color: $title-color;
 }
 
 @mixin subtitle($size, $weight) {
@@ -27,7 +27,7 @@
   font-weight: $weight;
   letter-spacing: 4px;
   text-transform: uppercase;
-  color: #7f6255;
+  color: $title-color;
 }
 
 @mixin body($size) {
@@ -35,7 +35,7 @@
   font-size: $size;
   font-weight: 300;
   line-height: 1.75rem;
-  color: #a88879;
+  color: $regular-color;
 }
 
 @mixin componentPadding {

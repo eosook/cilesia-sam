@@ -45,13 +45,6 @@
     }
 }
 
-.care-sections{
-    @include componentPadding;
-    @include tablet{
-        display: flex;
-    }
-}
-
 .script{
     min-height: 800px;
     padding: 2rem;

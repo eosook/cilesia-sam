@@ -4,13 +4,13 @@
 
 .question-box{
     width: 80%;
-    background-color: $color-four;
     margin: 0 auto;
     overflow: hidden;
+    border-bottom: 1px solid grey;
 }
 
 .question{
-    padding: 0.5rem 1rem;
+    padding: 0.75rem 1rem;
     cursor: pointer;
     display: flex;
     align-items: center;

@@ -40,7 +40,7 @@ export default function Header() {
             <li className="menu__item" onClick={() => toPage("services")}>
               Services
             </li>
-            <div className="book-dropdown">
+            {/* <div className="book-dropdown">
               <button
                 className="book-dropdown__button"
                 onClick={() => toPage("book")}
@@ -55,7 +55,13 @@ export default function Header() {
                   Care
                 </li>
               </div>
-            </div>
+            </div> */}
+            <li className="menu__item" onClick={() => toPage("policy")}>
+              Policy
+            </li>
+            <li className="menu__item" onClick={() => toPage("care")}>
+              Care
+            </li>
             <li className="menu__item" onClick={() => toPage("contact")}>
               Contact
             </li>

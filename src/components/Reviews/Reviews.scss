@@ -4,24 +4,38 @@
 
 .reviews {
   display: flex;
-  &__image {
-    margin: 0 auto;
+  background: url('../../assets/images/What others are saying - BLANK.png') no-repeat;
+  background-size: 100% 100%;
+  &__header {
+    @include title(2rem, 500);
+    width: 100%;
+    @include desktop {
+      width: auto;
+    }
   }
-
   &__section {
-    position: absolute;
+    margin: 2rem 0;
+    text-align: center;
+    flex-wrap: wrap;
+    justify-content: center;
     display: flex;
     justify-content: center;
     gap: 3.375rem;
     width: 100%;
-    margin: 2.75rem 0 0 12rem;
-    text-align: center;
+    @include desktop {
+      flex-wrap: nowrap;
+    }
   }
 }
 
 .review {
-  height: 220px;
-  width: 220px;
+  min-height: 290px;
+  max-height: 290px;
+  min-width: 240px;
+  max-width: 240px;
+  background-color: white;
+  border-radius: 8px;
+  padding: 0.75rem 1rem;
   &__comment {
     font-family: #7f6255;
     font-size: 0.75rem;
@@ -29,11 +43,13 @@
     color: #a88879;
     letter-spacing: -0.5px;
   }
-  &__name{
-    @include title(1.25rem, 500);
-    margin-top: 1.75rem;
+  &__stars {
+    margin-top: 0.5rem;
   }
-  &__style{
+  &__name {
+    @include title(1.25rem, 500);
+  }
+  &__style {
     @include subtitle(0.6rem, 400);
     letter-spacing: 2px;
   }

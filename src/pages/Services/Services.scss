@@ -37,6 +37,6 @@
   &__title {
     text-align: center;
     margin: 2rem auto 0;
-    @include title(2rem, 400);
+    @include title(2.5rem, 500);
   }
 }

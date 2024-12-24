@@ -1,0 +1,15 @@
+@use "../../styles/partials/variables" as *;
+@use "../../styles/partials/fonts" as *;
+@use "../../styles/partials/mixins" as *;
+
+.service-add-ons{
+    max-width: 1150px;
+    margin: 1rem auto;
+
+    &__title{
+        @include title(2rem, 500);
+    }
+    &__body{
+        @include body(1rem);
+    }
+}

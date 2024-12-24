@@ -1,5 +1,6 @@
 import "./Services.scss";
 import ServiceBlock from "../../components/ServiceBlock/ServiceBlock";
+import ServiceAddOns from "../../components/ServiceAddOns/ServiceAddOns";
 import classicImage from "../../assets/images/Classic.png";
 import hybridImage from "../../assets/images/Hybrid.png";
 import volumeImage from "../../assets/images/Volume.png";
@@ -39,7 +40,7 @@ export default function Services() {
           image={animeImage}
         />
         <ServiceBlock
-          side="left"
+          side="right"
           title="Foxeye/Eyeliner"
           body="Foxeye Lashes are designed to enhance the natural almond shape of your 
           eyes with a lifted, elongated appearance. The outer corners are fanned out to 
@@ -61,7 +62,7 @@ export default function Services() {
           image={classicImage}
         />
         <ServiceBlock
-          side="left"
+          side="right"
           title="Hybrid Lashes"
           body="Hybrid lash extensions are a blend of classic and volume techniques,
         combining individual lashes with volume fans. This mix creates a
@@ -82,7 +83,7 @@ export default function Services() {
           image={wetImage}
         />
         <ServiceBlock
-          side="left"
+          side="right"
           title="Volume Lashes"
           body="Volume lash extensions use multiple lightweight extensions (usually 6-9)
         fanned together and applied to each natural lash. This method produces a
@@ -104,27 +105,24 @@ export default function Services() {
           image={megaImage}
         />
         <h2 className="style-list__title">ADD ONS</h2>
-        <ServiceBlock
+        <ServiceAddOns
           side="left"
           title="Wispy"
           body="Add a touch of texture and movement to your lash set. With strategically 
           placed longer and shorter extensions, this add-on creates a light, airy effect 
           to any lash set. (Not applicable for Classic Lashes)"
-          image={wispyImage}
         />
-        <ServiceBlock
+        <ServiceAddOns
           side="left"
           title="Brown/Colour Lashes"
           body="Add a colour matching service to your appointment by opting for brown lash 
           tones. Please contact us ahead of time for this service to ensure we have your 
           desired colours on hand. "
-          image={wispyImage}
         />
-        <ServiceBlock
+        <ServiceAddOns
           side="left"
           title="Bottom Lashes"
           body="Add-on for any lash set to open up your eyes and add more drama to your look."
-          image={wispyImage}
         />
       </div>
     </main>

@@ -43,19 +43,19 @@
     max-height: 400px;
     min-width: 500px;
     max-width: 500px;
-    border-radius: 12px;
+    border-radius: 8px;
   }
   &__text {
-    width: 100%;
+    width: 500px;
   }
   &__title {
-    @include title(2rem, 400);
+    @include title(2.5rem, 400);
     @include tablet {
       margin: 0 200px 1rem 0;
     }
   }
   &__body {
-    @include body(1rem);
+    @include body(1.25rem);
     text-align: left;
     width: 100%;
     @include tablet {

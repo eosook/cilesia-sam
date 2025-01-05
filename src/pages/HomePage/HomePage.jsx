@@ -13,7 +13,9 @@ export default function HomePage() {
     <main className="home">
       <div className="hero">
         <div className="hero__container">
+          <h1 className="hero__title">Make your lash dreams a <span className="hero__span">reality.</span></h1>
           <button className="hero__button" onClick={toBooking}><img className="hero__button--image" src={arrow}></img>Book Now</button>
+          <h2 className="hero__subtitle">Cilesia Beauty Bar</h2>
         </div>
       </div>
       <WhatWeDo />

@@ -4,8 +4,8 @@
 
 .services {
   &-hero {
-    @include heroBackgroundOne;
     text-align: center;
+    padding: 2rem;
 
     &__title {
       @include title(2rem, 400);

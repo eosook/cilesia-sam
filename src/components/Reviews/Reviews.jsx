@@ -8,6 +8,7 @@ export default function Reviews() {
   const [reviewCount, setReviewCount] = useState(1);
   return (
     <div className="reviews">
+      <div className="reviews__background"></div>
       <div className="reviews__section">
         <h2 className="reviews__header">What Others are Saying</h2>
         <div id="review-1" className="review">

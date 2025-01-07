@@ -73,7 +73,6 @@
   &__body {
     @include body(1rem);
     margin: 0 auto;
-    text-align: center;
     width: 100%;
     @include tablet {
       margin: 1rem;

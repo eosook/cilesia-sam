@@ -4,8 +4,12 @@
 
 .reviews {
   display: flex;
-  background: url('../../assets/images/What others are saying - BLANK.png') no-repeat;
+  background: url('../../assets/images/What others are saying - ROTATED.png') no-repeat;
   background-size: 100% 100%;
+  @include tablet{
+    background: url('../../assets/images/What others are saying - BLANK.png') no-repeat;
+    background-size: 100% 100%;
+  }
   &__header {
     @include title(2rem, 500);
     width: 100%;

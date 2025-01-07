@@ -6,7 +6,7 @@
     text-align: center;
     
     &__title{
-        @include title(4rem, 500);
+        @include title(3.5rem, 500);
     }
 
     &-list{
@@ -17,7 +17,7 @@
     }
 
     &-section{
-        max-width: 1200px;
+        max-width: 1000px;
         margin: 0 auto;
         &__title{
             @include title(2rem, 400);

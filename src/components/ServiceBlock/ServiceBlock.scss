@@ -21,9 +21,9 @@
     padding: 1.5rem 1rem;
   }
 
-  &:hover {
-    animation: 0.5s ease lift forwards;
-  }
+  // &:hover {
+  //   animation: 0.5s ease lift forwards;
+  // }
 
   @include tablet {
     display: flex;
@@ -67,7 +67,6 @@
   &__title {
     @include title(2rem, 400);
     @include tablet {
-      margin: 0 200px 1rem 0;
       font-size: 2.5rem;
     }
   }

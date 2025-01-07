@@ -2,6 +2,9 @@ import "./FAQ.scss";
 import Question from "../../components/Question/Question";
 
 export default function FAQ() {
+  function moveToCare(){
+    location.href = "http://localhost:5173/care";
+  }
   return (
     <main>
       <div className="questions">
@@ -44,13 +47,17 @@ export default function FAQ() {
           <Question
             question={"How do i care for my eyelash extensions?"}
             answer={
-              "Please read our care page here for information on how to care for your lash extensions"
+              <>
+                Please read our care page <span className="question__span" onClick={moveToCare}>here</span> for information on how to care for your lash extensions
+              </>
             }
           />
           <Question
             question={"What do I need to do to prepare for my appointment?"}
             answer={
-              "Please read our Pre-Care page here for information on how to prepare for your lash extensions appointment."
+              <>
+                Please read our Pre-Care page <span className="question__span" onClick={moveToCare}>here</span> for information on how to prepare for your lash extensions appointment.
+              </>
             }
           />
           <Question

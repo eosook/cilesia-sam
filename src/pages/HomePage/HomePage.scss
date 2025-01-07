@@ -27,12 +27,13 @@
     }
     @include desktop{
       padding: 4rem 8rem;
-      max-width: 700px;
+      max-width: 900px;
     }
   }
   &__title{
     @include title(2.25rem, 500);
     font-style: italic;
+    text-transform: capitalize;
     color: black;
     margin-bottom: 3rem;
     @include tablet{
@@ -51,7 +52,7 @@
     @include title(2rem, 400);
     font-style: italic;
     @include tablet{
-
+      font-size: 3rem;
     }
   }
   &__button{

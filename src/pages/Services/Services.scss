@@ -10,7 +10,7 @@
     &__title {
       @include title(2rem, 400);
       @include tablet {
-        font-size: 3rem;
+        font-size: 3.5rem;
       }
     }
 
@@ -37,6 +37,9 @@
   &__title {
     text-align: center;
     margin: 2rem auto 0;
-    @include title(2.5rem, 500);
+    @include title(2rem, 500);
+    @include tablet{
+      font-size: 2.5rem;
+    }
   }
 }

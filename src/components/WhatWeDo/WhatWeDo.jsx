@@ -3,7 +3,7 @@ import photo from "../../assets/images/Elevate Your Everyday.png";
 
 export default function WhatWeDo() {
   const toBooking = () => {
-    location.href="http://localhost:5173/services"
+    location.href= location.href + "services"
   }
   return (
     <section className="home-section">

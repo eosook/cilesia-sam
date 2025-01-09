@@ -53,8 +53,7 @@ export default function Reviews() {
             Where do I even start. I've been getting lashes for years but I've
             never felt like someone truly understood Asian eyes like Sam does.
             She customizes my lashes to fit my eyes better than anyone I've been
-            to. It takes me an hour to drive to her but it is soo worth it. I
-            always feel taken care of, plus the leg wedge and blanket make it
+            to. I always feel taken care of, plus the leg wedge and blanket make it
             really comfortable to fall asleep.
           </div>
           <div className="review__stars">

@@ -38,5 +38,27 @@
     src: url("../../assets/fonts/Oswald-VariableFont_wght.ttf");
 }
 
+@font-face{
+    font-family: Bodoni;
+    src: url("../../assets/fonts/BodoniFLF-Bold");
+    font-style: bold;
+    font-weight: 700;
+}
+
+@font-face{
+    font-family: Bodoni;
+    src: url("../../assets/fonts/BodoniFLF-BoldItalic");
+    font-style: italic;
+    font-weight: 700;
+}
+
+@font-face{
+    font-family: Bodoni;
+    src: url("../../assets/fonts/BodoniFLF-Italic");
+    font-style: italic;
+    font-weight: 500;
+}
+
 $primary-font: Poppins, Arial, Helvetica, sans-serif;
 $secondary-font: Oswald, Arial, Helvetica, sans-serif;
+$bodoni-font: Bodoni, Arial, Helvetica, sans-serif;

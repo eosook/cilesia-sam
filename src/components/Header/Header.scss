@@ -6,7 +6,7 @@
   text-transform: uppercase;
   position: fixed;
   width: 100%;
-  background-color: white;
+  background-color: #eae8e8;
   &-bar {
     display: flex;
     justify-content: space-between;
@@ -32,6 +32,7 @@
   overflow: hidden;
   @include tablet {
     display: flex;
+    align-items: center;
   }
   &-burger {
     width: 40px;
@@ -49,7 +50,20 @@
     color: rgb(60, 58, 58);
     &:hover {
       cursor: pointer;
-      color: pink;
+      color: $regular-color;
+    }
+
+    &--book{
+      border: 1px solid black;
+      padding: 0.5rem 1rem;
+      border-radius: 4px;
+      color: white;
+      background-color: black;
+
+      &:hover{
+        color: black;
+        background-color: #eae8e8;
+      }
     }
   }
 }

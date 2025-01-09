@@ -26,7 +26,7 @@ export default function ReadyToBook() {
       <div className="ready-to-book__div">
         <h3 className="ready-to-book__subtitle">let's chat</h3>
         <h2 className="ready-to-book__title">
-          ready to book your last appointment?
+          ready to book your lash appointment?
         </h2>
       </div>
       <div className="ready-to-book__div">

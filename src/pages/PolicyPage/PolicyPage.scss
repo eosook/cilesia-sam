@@ -6,7 +6,7 @@
     text-align: center;
     
     &__title{
-        @include title(3.5rem, 500);
+        @include title(3.5rem, 400);
     }
 
     &-list{

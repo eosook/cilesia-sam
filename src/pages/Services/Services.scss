@@ -5,10 +5,10 @@
 .services {
   &-hero {
     text-align: center;
-    padding: 2rem;
+    padding: 2rem 2rem 0;
 
     &__title {
-      @include title(2rem, 400);
+      @include title(3rem, 400);
       @include tablet {
         font-size: 3.5rem;
       }

@@ -20,7 +20,7 @@
     height: 600px;
   }
   &__container{
-    padding: 2rem 4rem;
+    padding: 1rem 2rem;
     background: url('../../assets/images/Website Header - BLANK.png') no-repeat;
     background-size: 100% 400px;
     @include tablet{
@@ -34,23 +34,22 @@
     }
   }
   &__title{
-    font-family: bodoni;
+    font-family: $bodoni-font;
     font-weight: 500;
     font-style: italic;
     font-size: 3rem;
     letter-spacing: -3px;
     color: white;
     margin-bottom: 3rem;
+    max-width: 300px;
     @include tablet{
       font-size: 4.5rem;
       margin-bottom: 4rem;
-    }
-    @include desktop{
-      max-width: 450px;
+      max-width: 480px;
     }
   }
   &__span{
-    font-family: bodoni;
+    font-family: $bodoni-font;
     font-style: italic;
     font-weight: 500;
     color: $title-color;
@@ -59,10 +58,16 @@
     }
   }
   &__subtitle{
-    @include title(1.5rem, 400);
-    font-style: italic;
+    font-family: $sloop-font;
+    font-weight: 500;
+    color: $title-color;
+    letter-spacing: 2px;
+    font-size: 2rem;
     @include tablet{
-      font-size: 3rem;
+      font-size: 2.5rem;
+    }
+    @include desktop{
+      font-size: 3.75rem;
     }
   }
   &__button{

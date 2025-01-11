@@ -10,11 +10,26 @@
     background: url('../../assets/images/What others are saying - BLANK.png') no-repeat;
     background-size: 100% 100%;
   }
+  @include desktop{
+    padding: 0 2rem;
+  }
   &__header {
-    @include title(2rem, 500);
+    font-family: $bodoni-font;
+    font-style: italic;
+    font-weight: 700;
+    color: $title-color;
     width: 100%;
+    font-size: 3rem;
+    max-width: 300px;
+    letter-spacing: -2px;
+    line-height: 2rem;
     @include desktop {
-      width: auto;
+      max-width: 300px;
+    }
+    &--container{
+      width: 100%;
+      display: flex;
+      justify-content: center;
     }
   }
   &__section {

@@ -10,7 +10,7 @@ export default function Reviews() {
     <div className="reviews">
       <div className="reviews__background"></div>
       <div className="reviews__section">
-        <h2 className="reviews__header">What Others are Saying</h2>
+        <div className="reviews__header--container"><h2 className="reviews__header">What others are saying</h2></div>
         <div id="review-1" className="review">
           <div className="review__comment">
             A Lovely experience! Sam is very talented and made me feel super

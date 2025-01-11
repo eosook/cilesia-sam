@@ -40,25 +40,31 @@
 
 @font-face{
     font-family: Bodoni;
-    src: url("../../assets/fonts/BodoniFLF-Bold");
+    src: url("../../assets/fonts/BodoniFLF-Bold.ttf");
     font-style: bold;
     font-weight: 700;
 }
 
 @font-face{
     font-family: Bodoni;
-    src: url("../../assets/fonts/BodoniFLF-BoldItalic");
+    src: url("../../assets/fonts/BodoniFLF-BoldItalic.ttf");
     font-style: italic;
     font-weight: 700;
 }
 
 @font-face{
     font-family: Bodoni;
-    src: url("../../assets/fonts/BodoniFLF-Italic");
+    src: url("../../assets/fonts/BodoniFLF-Italic.ttf");
     font-style: italic;
     font-weight: 500;
+}
+
+@font-face{
+    font-family: Sloop;
+    src: url("../../assets/fonts/sloop-script-regular.ttf");
 }
 
 $primary-font: Poppins, Arial, Helvetica, sans-serif;
 $secondary-font: Oswald, Arial, Helvetica, sans-serif;
 $bodoni-font: Bodoni, Arial, Helvetica, sans-serif;
+$sloop-font: Sloop, Arial, Helvetica, sans-serif;

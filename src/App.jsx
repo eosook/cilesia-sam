@@ -25,6 +25,7 @@ function App() {
           <Route path="/care" element={<Care />}></Route>
           <Route path="/contact" element={<Contact />}></Route>
         </Routes>
+        <Footer />
       </BrowserRouter>
     </>
   )

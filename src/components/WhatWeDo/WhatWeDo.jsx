@@ -30,7 +30,6 @@ export default function WhatWeDo() {
           customizable options, you can choose the length, curl, and thickness
           that suit your style perfectly.
         </p>
-        <button className="home-section__button" onClick={toBooking}>Find Your Style</button>
       </div>
     </section>
   );

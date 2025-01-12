@@ -1,9 +1,10 @@
+import ReadyToBook from '../ReadyToBook/ReadyToBook';
 import './Footer.scss';
 
 export default function Footer(){
     return (
         <div className="footer">
-            <p>Richmond | All Rights Reserved</p>
+            <ReadyToBook />
         </div>
     )
 }

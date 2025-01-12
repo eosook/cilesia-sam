@@ -7,14 +7,20 @@ import arrow from "../../assets/images/white-right-arrow.png";
 
 export default function HomePage() {
   const toBooking = () => {
-    location.href="https://book.squareup.com/appointments/vp26zekhc1y452/location/L91FW9Z6QEKDK/services"
-  }
+    location.href =
+      "https://book.squareup.com/appointments/vp26zekhc1y452/location/L91FW9Z6QEKDK/services";
+  };
   return (
     <main className="home">
       <div className="hero">
         <div className="hero__container">
-          <h1 className="hero__title">Make your lash dreams a <span className="hero__span">reality.</span></h1>
-          <button className="hero__button" onClick={toBooking}><img className="hero__button--image" src={arrow}></img>Book Now</button>
+          <h1 className="hero__title">Make your lash </h1>
+          <h1 className="hero__title--indent">
+            dreams a <span className="hero__span">reality.</span>
+          </h1>
+          <button className="hero__button" onClick={toBooking}>
+            Book Now
+          </button>
           <h2 className="hero__subtitle">Cilesia Beauty Bar</h2>
         </div>
       </div>
@@ -22,7 +28,6 @@ export default function HomePage() {
       <Reviews />
       <WhoWeAre />
       <div className="home__seperate"></div>
-      <ReadyToBook />
     </main>
   );
 }

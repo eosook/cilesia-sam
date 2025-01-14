@@ -10,7 +10,7 @@ export default function PolicyPage() {
             <h2 className="policy-section__title">Studio Information</h2>
             <p className="policy-section__body">
               Our studio is based at home, and we share it with two friendly
-              dogs who might say hellow from afar! Although they’ll be kept in a
+              dogs who might say hello from afar! Although they’ll be kept in a
               separate area during your visit, you may hear some barking. Rest
               assured the dogs are not permitted inside the studio space.{" "}
             </p>

@@ -1,9 +1,11 @@
 import "./FAQ.scss";
 import Question from "../../components/Question/Question";
+import { useNavigate } from "react-router-dom";
 
 export default function FAQ() {
+  const navigate = useNavigate();
   function moveToCare(){
-    location.href = "http://localhost:5173/care";
+    navigate("/care");
   }
   return (
     <main>

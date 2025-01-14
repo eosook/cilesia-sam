@@ -1,10 +1,8 @@
 import "./WhatWeDo.scss";
 import photo from "../../assets/images/Elevate Your Everyday.png";
+import { useNavigate } from "react-router-dom";
 
 export default function WhatWeDo() {
-  const toBooking = () => {
-    location.href= location.href + "services"
-  }
   return (
     <section className="home-section">
       <img className="home-section__photo" src={photo} alt="Some Picture"></img>

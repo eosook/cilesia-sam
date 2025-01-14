@@ -4,11 +4,12 @@ import WhoWeAre from "../../components/WhoWeAre/WhoWeAre";
 import Reviews from "../../components/Reviews/Reviews";
 import ReadyToBook from "../../components/ReadyToBook/ReadyToBook";
 import arrow from "../../assets/images/white-right-arrow.png";
+import { useNavigate } from "react-router-dom";
 
 export default function HomePage() {
+  const navigate = useNavigate();
   const toBooking = () => {
-    location.href =
-      "https://book.squareup.com/appointments/vp26zekhc1y452/location/L91FW9Z6QEKDK/services";
+    navigate("/booking");
   };
   return (
     <main className="home">

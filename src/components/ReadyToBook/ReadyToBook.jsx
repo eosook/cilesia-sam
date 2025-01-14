@@ -5,12 +5,12 @@ export default function ReadyToBook() {
   const navigate = useNavigate();
 
   const toBooking = () => {
-    navigate("./book");
+    navigate("/book");
     window.scrollTo(0, 0);
   }
 
   const toContact = () => {
-    navigate("./contact")
+    navigate("/contact")
     window.scrollTo(0, 0);
   }
 

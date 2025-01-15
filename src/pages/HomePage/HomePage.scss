@@ -1,6 +1,7 @@
 @use "../../styles/partials/variables" as *;
 @use "../../styles/partials/fonts" as *;
 @use "../../styles/partials/mixins" as *;
+@use "../../styles/partials/animations" as *;
 
 @mixin heroTitle {
   font-family: $bodoni-font;
@@ -44,9 +45,11 @@
   }
   &__title {
     @include heroTitle;
+    animation: 1.5s ease-in 0s fadeIn;
     &--indent {
       @include heroTitle;
       margin: -4rem 0 2rem 1rem;
+      animation: 1.5s ease-in 0s fadeIn;
       @include tablet{
         margin: -4.75rem 0 4rem 7.5rem;
       }
@@ -65,13 +68,14 @@
     font-family: $sloop-font;
     font-weight: 500;
     color: $title-color;
-    letter-spacing: 2px;
+    letter-spacing: 4px;
     font-size: 2rem;
+    animation: 2.5s ease-in 0s fadeIn;
     @include tablet {
       font-size: 2.5rem;
     }
     @include desktop {
-      font-size: 3.75rem;
+      font-size: 4.25rem;
     }
   }
   &__button {
@@ -80,6 +84,7 @@
     color: white;
     margin-bottom: 2rem;
     text-transform: uppercase;
+
     @include tablet{
       font-size: 1.25rem;
     }

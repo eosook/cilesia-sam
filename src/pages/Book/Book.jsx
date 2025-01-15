@@ -19,8 +19,9 @@ export default function Book() {
     );
   }, []);
 
-  function toPage(policy) {
-    navigate("/" + policy);
+  function toPage(page) {
+    navigate("/" + page);
+    window.scrollTo(0, 0);
   }
   return (
     <main className="book">
@@ -32,7 +33,7 @@ export default function Book() {
             <span className="book__link" onClick={() => toPage("policy")}>
               policies
             </span>{" "}
-            and <span className="book__link" onClick={() => toPage("care")}>care</span>
+            and <span className="book__link" onClick={() => toPage("care")}>care </span>
             instructions prior to booking! If you have any questions, please
             feel free to <span className="book__link" onClick={() => toPage("contact")}>contact</span> me.
           </p>

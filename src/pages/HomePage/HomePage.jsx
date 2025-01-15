@@ -9,7 +9,8 @@ import { useNavigate } from "react-router-dom";
 export default function HomePage() {
   const navigate = useNavigate();
   const toBooking = () => {
-    navigate("/booking");
+    navigate("/book");
+    window.scrollTo(0, 0)
   };
   return (
     <main className="home">

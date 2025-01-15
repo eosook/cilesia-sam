@@ -6,6 +6,7 @@ export default function FAQ() {
   const navigate = useNavigate();
   function moveToCare(){
     navigate("/care");
+    window.scrollTo(0, 0);
   }
   return (
     <main>

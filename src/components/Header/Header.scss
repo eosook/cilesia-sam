@@ -26,7 +26,7 @@
 .menu {
   display: none;
   list-style-type: none;
-  gap: 1.5rem;
+  gap: 2rem;
   font-weight: 500;
   color: white;
   overflow: hidden;
@@ -35,7 +35,7 @@
     align-items: center;
   }
   &-burger {
-    width: 40px;
+    width: 36px;
     &:hover {
       cursor: pointer;
       color: white;
@@ -46,7 +46,7 @@
   }
 
   &__item {
-    @include title(1.25rem, 400);
+    @include title(1.5rem, 400);
     color: rgb(60, 58, 58);
     &:hover {
       cursor: pointer;
@@ -78,10 +78,12 @@
   &__item {
     background-color: white;
     padding: 1rem 2.5rem;
-    border: 1px solid black;
+    border-bottom: 1px solid black;
     @include title(1.25rem, 400);
     color: rgb(60, 58, 58);
-
+    &:first-child{
+      border-top: 1px solid black;
+    }
     &:hover {
       background-color: rgb(234, 229, 229);
       cursor: pointer;

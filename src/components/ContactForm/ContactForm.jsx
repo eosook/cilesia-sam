@@ -1,9 +1,10 @@
 import "./ContactForm.scss";
 import emailjs from "@emailjs/browser";
-import React, { useRef } from "react";
+import React, { useRef, useState } from "react";
 
 export default function ContactForm() {
   const form = useRef();
+  const [messageSent, SetMessageSent] = useState(false);
 
   const sendEmail = (e) => {
     e.preventDefault();
@@ -14,7 +15,7 @@ export default function ContactForm() {
       })
       .then(
         () => {
-          console.log("SUCCESS!");
+          SetMessageSent(true);
         },
         (error) => {
           console.log("FAILED...", error.text);
@@ -42,6 +43,7 @@ export default function ContactForm() {
       <button className="contact-form__button" type="submit">
         SUBMIT
       </button>
+      <h3 className={messageSent ? "contact-form__success" : "contact-form__false"}>Your message has been sent!</h3>
     </form>
   );
 }

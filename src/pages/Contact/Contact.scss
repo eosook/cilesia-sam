@@ -1,6 +1,7 @@
 @use '../../styles/partials/variables' as *;
 @use '../../styles/partials/fonts' as *;
 @use '../../styles/partials/mixins' as *;
+@use '../../styles/partials/animations' as *;
 
 .contact{
     min-height: calc(100vh - 3.75rem);
@@ -14,12 +15,14 @@
         width: 100%;
         padding: 0 2rem;
         margin-top: 2rem;
+        overflow: hidden;
         @include tablet{
             margin-top: 4rem;
         }
     }
     &__title{
         @include title(3rem, 400);
+        animation: 1s ease-in 0s fadeIn;
     }
     &__body{
         @include body(1rem);

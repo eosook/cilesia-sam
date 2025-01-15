@@ -1,6 +1,7 @@
 @use '../../styles/partials/variables' as *;
 @use '../../styles/partials/fonts' as *;
 @use '../../styles/partials/mixins' as *;
+@use '../../styles/partials/animations' as *;
 
 .question-box{
     width: 80%;
@@ -49,18 +50,6 @@
     }
 }
 
-@keyframes rotateRightArrow {
-  0%{
-    transform: rotate(90deg);
-  }
-}
-
-@keyframes rotateDownArrow {
-  0%{
-    transform: rotate(-90deg);
-  }
-}
-
 .answer {
   display: none;
 
@@ -77,20 +66,3 @@
   }
 }
 
-@keyframes loadAnswer {
-  0%{
-    transform: translateY(-50px);
-  }
-  100% {
-    transform: translateY(0);
-  }
-}
-
-@keyframes loadText {
-  0%{
-    transform: translateY(-50%);
-  }
-  100% {
-    transform: translateY(0);
-  }
-}

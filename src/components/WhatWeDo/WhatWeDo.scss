@@ -1,6 +1,7 @@
 @use "../../styles/partials/variables" as *;
 @use "../../styles/partials/fonts" as *;
 @use "../../styles/partials/mixins" as *;
+@use "../../styles/partials/animations" as *;
 
 .home-section {
   display: flex;
@@ -18,6 +19,7 @@
   }
 
   &__photo {
+    animation: 2s ease-out 0s 1 fadeIn;
     display: block;
     margin: 1rem auto;
     width: auto;
@@ -34,6 +36,7 @@
 
   &__div {
     margin-top: 2rem;
+    overflow: hidden;
     @include tablet {
       width: 100%;
     }
@@ -42,12 +45,14 @@
   &__subtitle {
     @include subtitle(1rem, 500);
     padding-bottom: 0.75rem;
+    animation: 1s ease-out 0s 1 slideIn;
   }
 
   &__title {
     @include title(2rem, 500);
     letter-spacing: 2px;
     padding-bottom: 1rem;
+    animation: 1s ease-out 0s 1 slideIn;
   }
 
   &__body {

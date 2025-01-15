@@ -27,13 +27,7 @@
 }
 
 .hero {
-  height: 350px;
-  @include tablet {
-    height: 550px;
-  }
-  @include desktop {
-    height: 600px;
-  }
+  height: 100%;
   &__container {
     padding: 1rem 2rem;
     background: url("../../assets/images/Website Header - BLANK.png") no-repeat;

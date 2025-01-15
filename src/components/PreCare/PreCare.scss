@@ -1,6 +1,7 @@
 @use '../../styles/partials/variables' as *;
 @use '../../styles/partials/fonts' as *;
 @use '../../styles/partials/mixins' as *;
+@use '../../styles/partials/animations' as *;
 
 .precare{
     border-bottom: 2px solid black;
@@ -16,14 +17,17 @@
     &__title{
         @include title(3rem, 400);
         text-shadow: none;
+        animation: 1s ease-in 0s fadeInStretch;
         &--main{
             @include title(3.5rem, 400);
             text-align: center;
+            animation: 1s ease-in 0s fadeInStretch;
         }
     }
     &__subtitle{
         @include subtitle(1.25rem, 500);
         text-shadow: none;
+        animation: 1s ease-in 0s fadeInStretch;
     }
 
     &-section{

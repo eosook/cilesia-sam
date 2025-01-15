@@ -1,12 +1,14 @@
 @use '../../styles/partials/variables' as *;
 @use '../../styles/partials/fonts' as *;
 @use '../../styles/partials/mixins' as *;
+@use '../../styles/partials/animations' as *;
 
 .questions{
     min-height: 84.75vh;
     padding-bottom: 2rem;
     &__hero{
         @include title(2rem, 400);
+        animation: 1s ease-out 0s 1 fadeInStretch;
         display: flex;
         align-items: center;
         justify-content: center;

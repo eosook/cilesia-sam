@@ -1,0 +1,62 @@
+// FAQ Animations
+
+@keyframes loadAnswer {
+  0% {
+    transform: translateY(-50px);
+  }
+  100% {
+    transform: translateY(0);
+  }
+}
+
+@keyframes loadText {
+  0% {
+    transform: translateY(-50%);
+  }
+  100% {
+    transform: translateY(0);
+  }
+}
+
+@keyframes rotateRightArrow {
+  0% {
+    transform: rotate(90deg);
+  }
+}
+
+@keyframes rotateDownArrow {
+  0% {
+    transform: rotate(-90deg);
+  }
+}
+
+// Title Fade Animations
+
+@keyframes slideIn {
+    0%{
+        transform: translateX(-400px);
+    }
+    100%{
+        transform: translateY(0);
+    }
+}
+
+@keyframes fadeIn{
+    0%{
+        opacity: 0;
+    }
+    100%{
+        opacity: 1;
+    }
+}
+
+@keyframes fadeInStretch {
+    0%{
+        opacity: 0;
+        transform: scale(0.9, 0.9);
+    }
+    100%{
+        opacity: 1;
+        transform: scale(1, 1);
+    }
+}

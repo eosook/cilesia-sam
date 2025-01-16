@@ -1,14 +1,48 @@
 import "./WhatWeDo.scss";
 import photo from "../../assets/images/Elevate Your Everyday.png";
-import { useNavigate } from "react-router-dom";
+import visibleOnScreen from "../../Observer";
+import React, { useRef } from "react";
 
 export default function WhatWeDo() {
+  const refs = [useRef(), useRef(), useRef()];
+  const isVisible = visibleOnScreen(refs);
+
   return (
     <section className="home-section">
-      <img className="home-section__photo" src={photo} alt="Some Picture"></img>
+      <img
+        key={0}
+        ref={refs[0]}
+        className={
+          isVisible
+            ? "home-section__photo animation__image"
+            : "home-section__photo"
+        }
+        src={photo}
+        alt="Some Picture"
+      ></img>
       <div className="home-section__div">
-        <h3 className="home-section__subtitle">Luxurious Lash Extensions</h3>
-        <h2 className="home-section__title">Elevate your every day</h2>
+        <h3
+          key={1}
+          ref={refs[1]}
+          className={
+            isVisible
+              ? "home-section__subtitle animation__slide"
+              : "home-section__subtitle"
+          }
+        >
+          Luxurious Lash Extensions
+        </h3>
+        <h2
+          key={2}
+          ref={refs[2]}
+          className={
+            isVisible
+              ? "home-section__title animation__slide"
+              : "home-section__title"
+          }
+        >
+          Elevate your every day
+        </h2>
         <p className="home-section__body">
           Imagine waking up every morning with effortlessly stunning lashes that
           enhance your natural beauty. Make this dream your reality. Say goodbye

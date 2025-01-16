@@ -11,8 +11,10 @@ export default function HomePage() {
   const navigate = useNavigate();
   const toBooking = () => {
     navigate("/book");
-    window.scrollTo(0, 0)
+    window.scrollTo(0, 0);
   };
+
+
   return (
     <main className="home">
       <div className="hero">

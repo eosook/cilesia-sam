@@ -60,3 +60,12 @@
         transform: scale(1, 1);
     }
 }
+
+.animation{
+  &__slide{
+    animation: 1s ease-in 0s slideIn;
+  }
+  &__image{
+    animation: 1s ease-in 0s fadeIn;
+  }
+}

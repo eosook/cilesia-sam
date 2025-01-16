@@ -5,6 +5,7 @@ import Reviews from "../../components/Reviews/Reviews";
 import ReadyToBook from "../../components/ReadyToBook/ReadyToBook";
 import arrow from "../../assets/images/white-right-arrow.png";
 import { useNavigate } from "react-router-dom";
+import HomeAdditions from "../../components/HomeAdditions/HomeAdditions";
 
 export default function HomePage() {
   const navigate = useNavigate();
@@ -29,7 +30,7 @@ export default function HomePage() {
       <WhatWeDo />
       <Reviews />
       <WhoWeAre />
-      <div className="home__seperate"></div>
+      <HomeAdditions />
     </main>
   );
 }

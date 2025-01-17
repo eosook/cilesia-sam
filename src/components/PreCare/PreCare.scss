@@ -8,20 +8,26 @@
 }
 
 .care{
-    @include componentPadding;
+    margin-top: 2rem;
     text-align: center;
 
     &__header{
         margin-bottom: 2rem;
     }
     &__title{
-        @include title(3rem, 400);
+        @include title(2.5rem, 400);
         text-shadow: none;
         animation: 1s ease-in 0s fadeInStretch;
+        @include tablet{
+            font-size: 3rem;
+        }
         &--main{
-            @include title(3.5rem, 400);
+            @include title(2.5rem, 400);
             text-align: center;
             animation: 1s ease-in 0s fadeInStretch;
+            @include tablet{
+                font-size: 3rem;
+            }
         }
     }
     &__subtitle{

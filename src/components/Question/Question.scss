@@ -4,10 +4,14 @@
 @use '../../styles/partials/animations' as *;
 
 .question-box{
-    width: 80%;
+    width: 90%;
     margin: 0 auto;
     overflow: hidden;
     border-bottom: 1px solid grey;
+    @include tablet{
+      width: 80%;
+      max-width: 1200px;
+    }
 }
 
 .question{

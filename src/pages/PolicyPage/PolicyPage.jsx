@@ -17,7 +17,7 @@ export default function PolicyPage() {
           </section>
 
           <section className="policy-section">
-            <h2 className="policy-section__title">Appointment Bookings:</h2>
+            <h2 className="policy-section__title">Appointment Bookings</h2>
             <p className="policy-section__body">
               All clients are required to send a $30 non-refundable deposit
               (cilesiabeautybar@gmail.com) to secure the booking. Please send a
@@ -29,7 +29,7 @@ export default function PolicyPage() {
 
           <section className="policy-section">
             <h2 className="policy-section__title">
-              Cancellations and Rescheduling:
+              Cancellations and Rescheduling
             </h2>
             <p className="policy-section__body">
               Please provide at minimum 48 hours notice for any cancellations or

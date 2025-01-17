@@ -4,12 +4,12 @@
 @use '../../styles/partials/animations' as *;
 
 .contact{
-    min-height: calc(100vh - 3.75rem);
     max-width: 1200px;
-    margin: 0 auto;
+    margin: 0 auto 2rem;
     @include tablet{
         display: flex;
-        padding: 10rem 2rem 2rem;
+        padding: 10rem 2rem;
+        margin: 0 auto;
     }
     &__container{
         width: 100%;

@@ -64,11 +64,11 @@
     }
     &__link{
         @include subtitle(1rem, 500);
-        color: rgb(0, 149, 255);
+        color: rgb(17, 0, 255);
         letter-spacing: 0rem;
         &:hover{
             cursor: pointer;
-            color: rgb(0, 13, 255);
+            color: rgb(0, 4, 83);
         }
         @include tablet{
             font-size: 1.25rem;

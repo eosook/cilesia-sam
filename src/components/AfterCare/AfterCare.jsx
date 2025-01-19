@@ -16,7 +16,7 @@ export default function AfterCare() {
         every 2 or 3 weeks.
       </p>
       <p className="care-section__body">
-        Appoints booked beyond 3 weeks from last appointment are considered a
+        Appointments booked beyond 3 weeks from last appointment are considered a
         full set.{" "}
       </p>
 

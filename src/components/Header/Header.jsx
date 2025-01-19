@@ -34,7 +34,7 @@ export default function Header() {
             <li className="menu__item" onClick={() => toPage("")}>
               Home
             </li>
-            <li className="menu__item" onClick={() => toPage("questions")}>
+            <li className="menu__item" onClick={() => toPage("faq")}>
               FAQ
             </li>
             {/* <li className="menu__item" onClick={() => toPage("services")}>
@@ -79,7 +79,7 @@ export default function Header() {
           </li>
           <li
             className="dropdown-menu__item"
-            onClick={() => toPage("questions")}
+            onClick={() => toPage("faq")}
           >
             FAQ
           </li>

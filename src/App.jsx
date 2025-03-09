@@ -1,5 +1,5 @@
 import './App.scss'
-import { BrowserRouter, Routes, Route, useLocation } from 'react-router-dom';
+import { BrowserRouter, Routes, Route, useLocation, HashRouter } from 'react-router-dom';
 import Header from './components/Header/Header';
 import Footer from './components/Footer/Footer';
 import HomePage from './pages/HomePage/HomePage';
@@ -29,7 +29,7 @@ const TrackPageView = () => {
 function App() {
   return (
     <>
-      <BrowserRouter>
+      <HashRouter>
         <TrackPageView />
         <Header />
         <Routes>
@@ -42,7 +42,7 @@ function App() {
           <Route path="/contact" element={<Contact />}></Route>
         </Routes>
         <Footer />
-      </BrowserRouter>
+      </HashRouter>
     </>
   )
 }

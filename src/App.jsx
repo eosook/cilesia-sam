@@ -10,7 +10,7 @@ import Contact from './pages/Contact/Contact';
 import PolicyPage from './pages/PolicyPage/PolicyPage';
 import Care from './pages/Care/Care';
 
-function App() {
+const TrackPageView = () => {
   const location = useLocation();
 
   useEffect(() => {
@@ -21,10 +21,14 @@ function App() {
     TagManager.dataLayer({ dataLayer: pageEvent });
   }, [location]);
 
+  return null;
+};
+
+function App() {
   return (
     <>
       <BrowserRouter>
-        <trackPageView />
+        <TrackPageView />
         <Header />
         <Routes>
           <Route path="/" element={<HomePage />}></Route>

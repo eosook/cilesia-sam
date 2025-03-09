@@ -9,6 +9,8 @@ import Book from './pages/Book/Book';
 import Contact from './pages/Contact/Contact';
 import PolicyPage from './pages/PolicyPage/PolicyPage';
 import Care from './pages/Care/Care';
+import { useEffect } from 'react';
+import TagManager from 'react-gtm-module';
 
 const TrackPageView = () => {
   const location = useLocation();

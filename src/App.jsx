@@ -14,11 +14,11 @@ function App() {
   const location = useLocation();
 
   useEffect(() => {
-    window.dataLayer = window.dataLayer || [];
-    window.dataLayer.push({
+    const pageEvent = {
       event: "pageview",
       page: location.pathname + location.search,
-    });
+    };
+    TagManager.dataLayer({ dataLayer: pageEvent });
   }, [location]);
 
   return (

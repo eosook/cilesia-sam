@@ -9,24 +9,18 @@ import Book from './pages/Book/Book';
 import Contact from './pages/Contact/Contact';
 import PolicyPage from './pages/PolicyPage/PolicyPage';
 import Care from './pages/Care/Care';
-import TagManager from "react-gtm-module";
 
-const trackPageView = () => {
+function App() {
   const location = useLocation();
 
   useEffect(() => {
-    TagManager.dataLayer({
-      dataLayer: {
-        event: "pageview",
-        pagePath: location.pathname,
-      },
+    window.dataLayer = window.dataLayer || [];
+    window.dataLayer.push({
+      event: "pageview",
+      page: location.pathname + location.search,
     });
   }, [location]);
 
-  return null; 
-};
-
-function App() {
   return (
     <>
       <BrowserRouter>

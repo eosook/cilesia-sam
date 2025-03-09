@@ -18,7 +18,7 @@ const TrackPageView = () => {
   useEffect(() => {
     const pageEvent = {
       event: "pageview",
-      page: location.pathname + location.search,
+      page: location.pathname + location.search + location.hash,
     };
     TagManager.dataLayer({ dataLayer: pageEvent });
   }, [location]);

@@ -1,5 +1,5 @@
 export const trackPageView = (url) => {
-    window.gtag('config', 'G-XXXXXXXXXX', {
+    window.gtag('config', 'G-DX5RW01F94', {
         page_path: url,
     });
 };

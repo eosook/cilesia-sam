@@ -9,6 +9,7 @@ import Book from './pages/Book/Book';
 import Contact from './pages/Contact/Contact';
 import PolicyPage from './pages/PolicyPage/PolicyPage';
 import AnalyticsTracker from './AnalyticsTracker';
+import Care from './pages/Care/Care';
 
 function App() {
   return (

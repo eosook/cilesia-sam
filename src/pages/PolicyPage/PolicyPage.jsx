@@ -1,6 +1,14 @@
 import "./PolicyPage.scss";
+import { useNavigate } from "react-router-dom";
 
 export default function PolicyPage() {
+  const navigate = useNavigate();
+
+  const toBooking = () => {
+    navigate("/book");
+    window.scrollTo(0, 0);
+  }
+
   return (
     <main>
       <div className="policy">
@@ -19,11 +27,11 @@ export default function PolicyPage() {
           <section className="policy-section">
             <h2 className="policy-section__title">Appointment Bookings</h2>
             <p className="policy-section__body">
-              All clients are required to send a $30 non-refundable deposit
-              (cilesiabeautybar@gmail.com) to secure the booking. Please send a
-              screenshot of the e-transfer to confirm the appointment. If the
-              deposit is not received within 24 hours of the booking, your
-              appointment will be automatically cancelled.{" "}
+              Deposits are no longer required. To book your first appointment,
+              please use the <span className="ready-to-book__link" onClick={toBooking}>Book Now</span> page so your information can be properly
+              recorded in the system. After booking, the system will
+              automatically send you a policy form via email. Please review and
+              sign it prior to your appointment.
             </p>
           </section>
 
